@@ -1,0 +1,74 @@
+{
+  "seed": 89,
+  "geometry": {
+    "hidden": 8,
+    "intermediate": 8,
+    "q_heads": 2,
+    "kv_heads": 1,
+    "head_dim": 8,
+    "layers": 1,
+    "vocabulary": 8,
+    "max_sequence": 3,
+    "group": 8
+  },
+  "prefix": 1,
+  "branching": false,
+  "evaluations": [
+    {
+      "token": 3,
+      "position": 0,
+      "argmax": 3,
+      "maximum_absolute_score": 1058263804
+    },
+    {
+      "token": 4,
+      "position": 1,
+      "argmax": 4,
+      "maximum_absolute_score": 1058571639
+    },
+    {
+      "token": 4,
+      "position": 2,
+      "argmax": 4,
+      "maximum_absolute_score": 1058571639
+    }
+  ],
+  "transactions": [
+    {
+      "token": 3,
+      "position": 0,
+      "phase": 0,
+      "nodes": [],
+      "parents": [],
+      "generated": [],
+      "frames_through_transaction": 1
+    },
+    {
+      "token": 4,
+      "position": 1,
+      "phase": 1,
+      "nodes": [
+        4
+      ],
+      "parents": [
+        4
+      ],
+      "generated": [
+        4
+      ],
+      "frames_through_transaction": 2
+    },
+    {
+      "token": 4,
+      "position": 2,
+      "phase": 1,
+      "nodes": [],
+      "parents": [],
+      "generated": [],
+      "frames_through_transaction": 3
+    }
+  ],
+  "raw_summary": "REJECTED continuation_fault=4\nSUMMARY transactions=3 frames=3 logits=24 key_writes=24 value_writes=24 memory_requests=5448 cycles=57558\n- evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:381: Verilog $finish\n",
+  "compiled_binary": "evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/obj-speculative/simulate",
+  "continuation_fault": 4
+}

@@ -1,0 +1,19 @@
+read_verilog -sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_attention.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_bank_scheduler.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_client_router.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_csr_perf.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_decoder.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_dual_think_ctrl.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_elementwise.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_exp.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_fp32_add.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_fp32_div.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_fp32_mul.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_fp32_sqrt.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_gemv.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_head_buffer.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_mlp.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_norm_memory.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_parameters.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_qknorm_rope.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_rmsnorm.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_scalar.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_silu.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_tensor_array.sv evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/yosys-source/anvil_qn1_top.sv
+chparam -set PROFILE 3 -set BANKS 1 -set QUEUE_DEPTH 1 -set COMPACT 1 -set NUM_LAYERS 1 -set HIDDEN_SIZE 8 -set INTERMEDIATE_SIZE 8 -set NUM_Q_HEADS 2 -set NUM_KV_HEADS 1 -set HEAD_DIM 8 -set VOCAB_SIZE 1 -set MAX_SEQ_LEN 1 -set GROUP_SIZE 8 anvil_qn1_top
+hierarchy -check -top anvil_qn1_top
+proc
+opt_expr
+opt_clean
+check -assert
+write_json evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/hierarchy.json
+synth -top anvil_qn1_top -noshare -noalumacc -run coarse:coarse
+hierarchy -check -top anvil_qn1_top
+check -assert
+stat
+write_json evidence/l1-synthesis-boundary0-20261103T041605Z-0dfcb40e/coarse-synthesized.json
+select anvil_qn1_top/native.bank_scheduler
+flatten
+select anvil_qn1_top
+opt -full
+scc -expect 0
+check -assert

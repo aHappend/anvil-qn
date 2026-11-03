@@ -1,0 +1,4 @@
+BANK bank=0 requests=11328
+REORDER responses=0
+SUMMARY transactions=6 logits=48 key_writes=48 value_writes=48 memory_requests=11328 cycles=262458
+- evidence/l1-memory-matrix-case00-20261103T101948Z-51f863e8/banked_top_tb.sv:357: Verilog $finish

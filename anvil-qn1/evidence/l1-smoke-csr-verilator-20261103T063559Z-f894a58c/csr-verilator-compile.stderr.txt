@@ -1,0 +1,6 @@
+%Warning-WIDTHTRUNC: evidence/l1-smoke-csr-verilator-20261103T063559Z-f894a58c/csr-verilator_tb.sv:49:33: Logical operator LOGNOT expects 1 bit on the LHS, but LHS's VARREF 'fd' generates 32 bits.
+                                                                                                        : ... note: In instance 'control_tb'
+   49 |     fd=$fopen(filename,"r");if (!fd) $fatal(1,"OPEN_VECTORS");
+      |                                 ^
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.020
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.

@@ -1,0 +1,504 @@
+%Warning-WIDTHEXPAND: rtl/anvil_qn1_qknorm_rope.sv:43:27: Operator GTE expects 32 bits on the LHS, but LHS's VARREF 'in_head' generates 6 bits.
+                                                        : ... note: In instance 'top_tb.dut.native.decoder.qknorm_rope'
+   43 |       (in_is_key ? in_head>=NUM_KV_HEADS : in_head>=NUM_Q_HEADS);
+      |                           ^~
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.020
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-WIDTHEXPAND: rtl/anvil_qn1_qknorm_rope.sv:43:51: Operator GTE expects 32 bits on the LHS, but LHS's VARREF 'in_head' generates 6 bits.
+                                                        : ... note: In instance 'top_tb.dut.native.decoder.qknorm_rope'
+   43 |       (in_is_key ? in_head>=NUM_KV_HEADS : in_head>=NUM_Q_HEADS);
+      |                                                   ^~
+%Warning-WIDTHEXPAND: rtl/anvil_qn1_gemv.sv:72:62: Operator LT expects 8 bits on the RHS, but RHS's VARREF 'active_groups' generates 6 bits.
+                                                 : ... note: In instance 'top_tb.dut.native.decoder.projections'
+   72 |     wire response_in_range=state==GROUP_LOAD ? response_index<active_groups :
+      |                                                              ^
+%Warning-WIDTHTRUNC: rtl/anvil_qn1_gemv.sv:152:23: Bit extraction of array[31:0] requires 5 bit index, not 8 bits.
+                                                 : ... note: In instance 'top_tb.dut.native.decoder.projections'
+  152 |               2: zeros[response_index]<=rsp_data;
+      |                       ^
+%Warning-WIDTHTRUNC: rtl/anvil_qn1_gemv.sv:153:24: Bit extraction of array[31:0] requires 5 bit index, not 8 bits.
+                                                 : ... note: In instance 'top_tb.dut.native.decoder.projections'
+  153 |               3: scales[response_index]<=rsp_data[15:0];
+      |                        ^
+%Warning-WIDTHEXPAND: rtl/anvil_qn1_attention.sv:56:50: Operator GTE expects 32 bits on the LHS, but LHS's SEL generates 8 bits.
+                                                      : ... note: In instance 'top_tb.dut.native.decoder.attention'
+   56 |       rsp_tag[8]!=(state==V_LOAD) || rsp_tag[7:0]>=HEAD_DIM ||
+      |                                                  ^~
+%Warning-WIDTHEXPAND: rtl/anvil_qn1_attention.sv:135:78: Operator LT expects 32 bits on the LHS, but LHS's VARREF 'issued' generates 9 bits.
+                                                       : ... note: In instance 'top_tb.dut.native.decoder.attention'
+  135 |     assign req_valid=rst_n && !flush && !response_bad && load_state && issued<HEAD_DIM;
+      |                                                                              ^
+%Warning-WIDTHEXPAND: rtl/anvil_qn1_attention.sv:191:55: Operator GTE expects 32 bits on the LHS, but LHS's VARREF 'start_head' generates 6 bits.
+                                                       : ... note: In instance 'top_tb.dut.native.decoder.attention'
+  191 |               if (start_pos>=MAX_SEQ_LEN || start_head>=NUM_Q_HEADS || query_bad) state<=FAULT;
+      |                                                       ^~
+%Warning-WIDTHEXPAND: rtl/anvil_qn1_attention.sv:198:31: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'issued' generates 9 bits.
+                                                       : ... note: In instance 'top_tb.dut.native.decoder.attention'
+  198 |             K_LOAD: if (issued==HEAD_DIM && received==HEAD_DIM) state<=DOT;
+      |                               ^~
+%Warning-WIDTHEXPAND: rtl/anvil_qn1_attention.sv:198:53: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'received' generates 9 bits.
+                                                       : ... note: In instance 'top_tb.dut.native.decoder.attention'
+  198 |             K_LOAD: if (issued==HEAD_DIM && received==HEAD_DIM) state<=DOT;
+      |                                                     ^~
+%Warning-WIDTHEXPAND: rtl/anvil_qn1_attention.sv:201:26: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'elapsed' generates 6 bits.
+                                                       : ... note: In instance 'top_tb.dut.native.decoder.attention'
+  201 |               if (elapsed==DOT_LATENCY) begin
+      |                          ^~
+%Warning-WIDTHEXPAND: rtl/anvil_qn1_attention.sv:211:31: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'issued' generates 9 bits.
+                                                       : ... note: In instance 'top_tb.dut.native.decoder.attention'
+  211 |             V_LOAD: if (issued==HEAD_DIM && received==HEAD_DIM) begin cursor<=0; state<=NUM_READ; end
+      |                               ^~
+%Warning-WIDTHEXPAND: rtl/anvil_qn1_attention.sv:211:53: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'received' generates 9 bits.
+                                                       : ... note: In instance 'top_tb.dut.native.decoder.attention'
+  211 |             V_LOAD: if (issued==HEAD_DIM && received==HEAD_DIM) begin cursor<=0; state<=NUM_READ; end
+      |                                                     ^~
+%Warning-WIDTHEXPAND: rtl/anvil_qn1_dual_think_ctrl.sv:104:62: Operator GTE expects 32 bits on the LHS, but LHS's SEL generates 3 bits.
+                                                             : ... note: In instance 'top_tb.dut.native.dual_think_ctrl'
+  104 |         if (draft_parents[i*3+:3]!=4 && draft_parents[i*3+:3]>=i)
+      |                                                              ^~
+%Warning-WIDTHEXPAND: rtl/anvil_qn1_decoder.sv:259:21: Operator ASSIGNW expects 32 bits on the Assign RHS, but Assign RHS's REPLICATE generates 28 bits.
+                                                     : ... note: In instance 'top_tb.dut.native.decoder'
+  259 |   assign ct[224+:32]={fusion_cursor[26:0],fstate==F_KV_WRITE};
+      |                     ^
+%Warning-WIDTHEXPAND: rtl/anvil_qn1_decoder.sv:274:21: Operator ASSIGNW expects 32 bits on the Assign RHS, but Assign RHS's REPLICATE generates 28 bits.
+                                                     : ... note: In instance 'top_tb.dut.native.decoder'
+  274 |   assign ct[192+:32]={saved_index[26:0],gstate==G_KV_WRITE};
+      |                     ^
+%Warning-WIDTHEXPAND: rtl/anvil_qn1_decoder.sv:442:33: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'attention_head' generates 6 bits.
+                                                     : ... note: In instance 'top_tb.dut.native.decoder'
+  442 |               if (attention_head==NUM_Q_HEADS-1) state<=O_CMD;
+      |                                 ^~
+%Warning-WIDTHEXPAND: rtl/anvil_qn1_top.sv:278:65: Operator SUB expects 32 or 6 bits on the LHS, but LHS's VARREF 'ctrl_commit_count' generates 3 bits.
+                                                 : ... note: In instance 'top_tb.dut'
+  278 |             pending_token<=ctrl_commit_tokens[(ctrl_commit_count-1'b1)*32+:32];
+      |                                                                 ^
+%Warning-WIDTHTRUNC: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:102:19: Logical operator LOGNOT expects 1 bit on the LHS, but LHS's VARREF 'draft_seen' generates 32 bits.
+                                                                                                        : ... note: In instance 'top_tb'
+  102 |       draft_valid=!draft_seen;
+      |                   ^
+%Warning-WIDTHTRUNC: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:115:27: Logical operator LOGOR expects 1 bit on the LHS, but LHS's VARREF 'tx_token_seen' generates 32 bits.
+                                                                                                        : ... note: In instance 'top_tb'
+  115 |         if (tx_token_seen || draft_ready!==0) $fatal(1,"SPEC_TOKEN_ORDER");
+      |                           ^~
+%Warning-WIDTHTRUNC: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:119:13: Logical operator LOGNOT expects 1 bit on the LHS, but LHS's VARREF 'tx_token_seen' generates 32 bits.
+                                                                                                        : ... note: In instance 'top_tb'
+  119 |         if (!tx_token_seen || host_phases[active_tx]!=1 || draft_seen ||
+      |             ^
+%Warning-WIDTHTRUNC: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:119:57: Logical operator LOGOR expects 1 bit on the RHS, but RHS's VARREF 'draft_seen' generates 32 bits.
+                                                                                                        : ... note: In instance 'top_tb'
+  119 |         if (!tx_token_seen || host_phases[active_tx]!=1 || draft_seen ||
+      |                                                         ^~
+%Warning-WIDTHTRUNC: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:281:44: Logical operator LOGAND expects 1 bit on the RHS, but RHS's VARREF 'commit_seen' generates 32 bits.
+                                                                                                        : ... note: In instance 'top_tb'
+  281 |             (expected_counts[active_tx]==0 && commit_seen)) $fatal(1,"DONE_ORDER");
+      |                                            ^~
+%Warning-WIDTHTRUNC: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:283:32: Logical operator LOGNOT expects 1 bit on the LHS, but LHS's VARREF 'draft_seen' generates 32 bits.
+                                                                                                        : ... note: In instance 'top_tb'
+  283 |             configured_mode && !draft_seen) $fatal(1,"SPEC_MISSING_DRAFT");
+      |                                ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:294:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4208 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  294 |     filename={prefix,"/embedding.hex"};$readmemh(filename,embedding);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:295:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4192 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  295 |     filename={prefix,"/qweight.hex"};$readmemh(filename,qweight);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:296:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4168 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  296 |     filename={prefix,"/zero.hex"};$readmemh(filename,zero_image);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:297:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4176 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  297 |     filename={prefix,"/scale.hex"};$readmemh(filename,scale_image);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:298:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4176 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  298 |     filename={prefix,"/gamma.hex"};$readmemh(filename,gamma);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:299:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4168 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  299 |     filename={prefix,"/rope.hex"};$readmemh(filename,rope);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:300:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4264 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  300 |     filename={prefix,"/expected-scratch.hex"};$readmemh(filename,expected_scratch);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:301:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4264 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  301 |     filename={prefix,"/expected-initial.hex"};$readmemh(filename,expected_initial);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:302:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4232 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  302 |     filename={prefix,"/expected-key.hex"};$readmemh(filename,expected_keys);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:303:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4248 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  303 |     filename={prefix,"/expected-value.hex"};$readmemh(filename,expected_values);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:304:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4256 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  304 |     filename={prefix,"/expected-logits.hex"};$readmemh(filename,expected_logits);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:305:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4216 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  305 |     filename={prefix,"/host-token.hex"};$readmemh(filename,host_tokens);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:306:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4216 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  306 |     filename={prefix,"/host-phase.hex"};$readmemh(filename,host_phases);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:307:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4248 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  307 |     filename={prefix,"/expected-token.hex"};$readmemh(filename,expected_tokens);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:308:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4216 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  308 |     filename={prefix,"/eval-token.hex"};$readmemh(filename,eval_tokens);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:309:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4240 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  309 |     filename={prefix,"/host-position.hex"};$readmemh(filename,host_positions);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:310:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4248 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  310 |     filename={prefix,"/expected-count.hex"};$readmemh(filename,expected_counts);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:311:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4256 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  311 |     filename={prefix,"/expected-frames.hex"};$readmemh(filename,expected_frames);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:312:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4280 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  312 |     filename={prefix,"/expected-committed.hex"};$readmemh(filename,expected_committed);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:313:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4224 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  313 |     filename={prefix,"/draft-count.hex"};$readmemh(filename,draft_counts);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:314:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4224 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  314 |     filename={prefix,"/draft-token.hex"};$readmemh(filename,draft_token_image);
+      |             ^
+%Warning-WIDTHEXPAND: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:315:13: Operator ASSIGN expects 8192 bits on the Assign RHS, but Assign RHS's REPLICATE generates 4232 bits.
+                                                                                                         : ... note: In instance 'top_tb'
+  315 |     filename={prefix,"/draft-parent.hex"};$readmemh(filename,draft_parent_image);
+      |             ^
+%Warning-WIDTHTRUNC: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:340:70: Operator ASSIGN expects 1 bits on the Assign RHS, but Assign RHS's ARRAYSEL generates 32 bits.
+                                                                                                        : ... note: In instance 'top_tb'
+  340 |       token_id=host_tokens[c];token_pos=host_positions[c];token_phase=host_phases[c];
+      |                                                                      ^
+%Warning-WIDTHTRUNC: evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:372:14: Logical operator LOGNOT expects 1 bit on the LHS, but LHS's VARREF 'fault_seen' generates 32 bits.
+                                                                                                        : ... note: In instance 'top_tb'
+  372 |       while (!fault_seen && guard<100) begin @(negedge clk);#1;guard=guard+1;end
+      |              ^
+%Warning-LATCH: rtl/anvil_qn1_client_router.sv:29:3: Latch inferred for signal 'top_tb.dut.native.decoder.memory_router.candidate' (not all control paths of combinational always assign a value)
+                                                   : ... Suggest use of always_latch for intentional latches
+   29 |   always @* begin
+      |   ^~~~~~
+%Warning-UNOPTFLAT: rtl/anvil_qn1_client_router.sv:56:74: Signal unoptimizable: Circular combinational logic: 'top_tb.dut.native.decoder.memory_router.__VdfgTmp_h756fb8b6__0'
+   56 |     assign client_rsp_valid[client]=active && rsp_valid && !bad_response &&
+      |                                                                          ^~
+                    rtl/anvil_qn1_client_router.sv:56:74:      Example path: top_tb.dut.native.decoder.memory_router.__VdfgTmp_h756fb8b6__0
+                    rtl/anvil_qn1_decoder.sv:358:14:      Example path: ALWAYS
+                    rtl/anvil_qn1_decoder.sv:358:8:      Example path: top_tb.dut.native.decoder.io_bad
+                    rtl/anvil_qn1_decoder.sv:379:15:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:71:69:      Example path: top_tb.dut.native.decoder_error
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:121:10:      Example path: top_tb.dut.native.logic_fault
+                    rtl/anvil_qn1_top.sv:218:39:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:16:42:      Example path: top_tb.dut.__Vcellinp__native.bank_scheduler__mem_req_ready
+                    rtl/anvil_qn1_bank_scheduler.sv:53:5:      Example path: ALWAYS
+                    rtl/anvil_qn1_bank_scheduler.sv:45:46:      Example path: top_tb.dut.native.bank_scheduler.legal.transaction_fault
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: top_tb.dut.native.bank_scheduler.__VdfgTmp_haf599044__0
+                    rtl/anvil_qn1_bank_scheduler.sv:94:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:77:46:      Example path: top_tb.dut.native.drsp_valid
+                    rtl/anvil_qn1_bank_scheduler.sv:95:20:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:80:71:      Example path: top_tb.dut.native.drsp_data
+                    rtl/anvil_qn1_client_router.sv:58:68:      Example path: ASSIGNW
+                    rtl/anvil_qn1_decoder.sv:57:38:      Example path: top_tb.dut.native.decoder.rd
+                    rtl/anvil_qn1_decoder.sv:358:14:      Example path: ALWAYS
+%Warning-UNOPTFLAT: rtl/anvil_qn1_top.sv:77:70: Signal unoptimizable: Circular combinational logic: 'top_tb.dut.native.drsp_error'
+   77 |     wire dreq_valid, dreq_ready, dreq_write, drsp_valid, drsp_ready, drsp_error;
+      |                                                                      ^~~~~~~~~~
+                    rtl/anvil_qn1_top.sv:77:70:      Example path: top_tb.dut.native.drsp_error
+                    rtl/anvil_qn1_decoder.sv:358:14:      Example path: ALWAYS
+                    rtl/anvil_qn1_decoder.sv:358:8:      Example path: top_tb.dut.native.decoder.io_bad
+                    rtl/anvil_qn1_decoder.sv:379:15:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:71:69:      Example path: top_tb.dut.native.decoder_error
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:121:10:      Example path: top_tb.dut.native.logic_fault
+                    rtl/anvil_qn1_top.sv:218:39:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:16:42:      Example path: top_tb.dut.__Vcellinp__native.bank_scheduler__mem_req_ready
+                    rtl/anvil_qn1_bank_scheduler.sv:53:5:      Example path: ALWAYS
+                    rtl/anvil_qn1_bank_scheduler.sv:45:46:      Example path: top_tb.dut.native.bank_scheduler.legal.transaction_fault
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: top_tb.dut.native.bank_scheduler.__VdfgTmp_haf599044__0
+                    rtl/anvil_qn1_bank_scheduler.sv:94:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:77:46:      Example path: top_tb.dut.native.drsp_valid
+                    rtl/anvil_qn1_bank_scheduler.sv:95:20:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:80:71:      Example path: top_tb.dut.native.drsp_data
+                    rtl/anvil_qn1_client_router.sv:58:68:      Example path: ASSIGNW
+                    rtl/anvil_qn1_decoder.sv:57:38:      Example path: top_tb.dut.native.decoder.rd
+                    rtl/anvil_qn1_decoder.sv:358:14:      Example path: ALWAYS
+%Warning-UNOPTFLAT: rtl/anvil_qn1_elementwise.sv:13:14: Signal unoptimizable: Circular combinational logic: 'top_tb.dut.native.decoder.__Vcellinp__residuals__rsp_valid'
+   13 |   input wire rsp_valid,
+      |              ^~~~~~~~~
+                    rtl/anvil_qn1_elementwise.sv:13:14:      Example path: top_tb.dut.native.decoder.__Vcellinp__residuals__rsp_valid
+                    rtl/anvil_qn1_elementwise.sv:27:22:      Example path: ALWAYS
+                    rtl/anvil_qn1_elementwise.sv:27:10:      Example path: top_tb.dut.native.decoder.residuals.legal.response_bad
+                    rtl/anvil_qn1_elementwise.sv:42:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_elementwise.sv:8:15:      Example path: top_tb.dut.native.decoder.__Vcellout__residuals__req_valid
+                    rtl/anvil_qn1_client_router.sv:45:18:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:78:16:      Example path: top_tb.dut.native.dreq_kind
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:121:10:      Example path: top_tb.dut.native.logic_fault
+                    rtl/anvil_qn1_top.sv:218:39:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:16:42:      Example path: top_tb.dut.__Vcellinp__native.bank_scheduler__mem_req_ready
+                    rtl/anvil_qn1_bank_scheduler.sv:53:5:      Example path: ALWAYS
+                    rtl/anvil_qn1_bank_scheduler.sv:45:46:      Example path: top_tb.dut.native.bank_scheduler.legal.transaction_fault
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: top_tb.dut.native.bank_scheduler.__VdfgTmp_haf599044__0
+                    rtl/anvil_qn1_bank_scheduler.sv:94:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:77:46:      Example path: top_tb.dut.native.drsp_valid
+                    rtl/anvil_qn1_bank_scheduler.sv:95:20:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:80:71:      Example path: top_tb.dut.native.drsp_data
+                    rtl/anvil_qn1_client_router.sv:58:68:      Example path: ASSIGNW
+                    rtl/anvil_qn1_decoder.sv:57:38:      Example path: top_tb.dut.native.decoder.rd
+                    rtl/anvil_qn1_decoder.sv:358:14:      Example path: ALWAYS
+                    rtl/anvil_qn1_decoder.sv:358:8:      Example path: top_tb.dut.native.decoder.io_bad
+                    rtl/anvil_qn1_decoder.sv:379:15:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:71:69:      Example path: top_tb.dut.native.decoder_error
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW
+%Warning-UNOPTFLAT: rtl/anvil_qn1_mlp.sv:19:14: Signal unoptimizable: Circular combinational logic: 'top_tb.dut.native.decoder.__Vcellinp__mlp__rsp_valid'
+   19 |   input wire rsp_valid,
+      |              ^~~~~~~~~
+                    rtl/anvil_qn1_mlp.sv:19:14:      Example path: top_tb.dut.native.decoder.__Vcellinp__mlp__rsp_valid
+                    rtl/anvil_qn1_mlp.sv:37:22:      Example path: ALWAYS
+                    rtl/anvil_qn1_mlp.sv:37:10:      Example path: top_tb.dut.native.decoder.mlp.legal.response_bad
+                    rtl/anvil_qn1_mlp.sv:60:29:      Example path: ASSIGNW
+                    rtl/anvil_qn1_mlp.sv:60:29:      Example path: top_tb.dut.native.decoder.mlp.__VdfgTmp_h3dfb0711__0
+                    rtl/anvil_qn1_mlp.sv:69:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_mlp.sv:14:15:      Example path: top_tb.dut.native.decoder.__Vcellout__mlp__req_valid
+                    rtl/anvil_qn1_client_router.sv:45:18:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:78:16:      Example path: top_tb.dut.native.dreq_kind
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:121:10:      Example path: top_tb.dut.native.logic_fault
+                    rtl/anvil_qn1_top.sv:218:39:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:16:42:      Example path: top_tb.dut.__Vcellinp__native.bank_scheduler__mem_req_ready
+                    rtl/anvil_qn1_bank_scheduler.sv:53:5:      Example path: ALWAYS
+                    rtl/anvil_qn1_bank_scheduler.sv:45:46:      Example path: top_tb.dut.native.bank_scheduler.legal.transaction_fault
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: top_tb.dut.native.bank_scheduler.__VdfgTmp_haf599044__0
+                    rtl/anvil_qn1_bank_scheduler.sv:94:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:77:46:      Example path: top_tb.dut.native.drsp_valid
+                    rtl/anvil_qn1_bank_scheduler.sv:95:20:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:80:71:      Example path: top_tb.dut.native.drsp_data
+                    rtl/anvil_qn1_client_router.sv:58:68:      Example path: ASSIGNW
+                    rtl/anvil_qn1_decoder.sv:57:38:      Example path: top_tb.dut.native.decoder.rd
+                    rtl/anvil_qn1_decoder.sv:358:14:      Example path: ALWAYS
+                    rtl/anvil_qn1_decoder.sv:358:8:      Example path: top_tb.dut.native.decoder.io_bad
+                    rtl/anvil_qn1_decoder.sv:379:15:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:71:69:      Example path: top_tb.dut.native.decoder_error
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW
+%Warning-UNOPTFLAT: rtl/anvil_qn1_attention.sv:20:14: Signal unoptimizable: Circular combinational logic: 'top_tb.dut.native.decoder.__Vcellinp__attention__rsp_valid'
+   20 |   input wire rsp_valid,
+      |              ^~~~~~~~~
+                    rtl/anvil_qn1_attention.sv:20:14:      Example path: top_tb.dut.native.decoder.__Vcellinp__attention__rsp_valid
+                    rtl/anvil_qn1_attention.sv:55:22:      Example path: ALWAYS
+                    rtl/anvil_qn1_attention.sv:55:10:      Example path: top_tb.dut.native.decoder.attention.legal.response_bad
+                    rtl/anvil_qn1_attention.sv:128:38:      Example path: ASSIGNW
+                    rtl/anvil_qn1_attention.sv:128:38:      Example path: top_tb.dut.native.decoder.attention.__VdfgTmp_h72b1a6e1__0
+                    rtl/anvil_qn1_attention.sv:135:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_attention.sv:16:15:      Example path: top_tb.dut.native.decoder.__Vcellout__attention__req_valid
+                    rtl/anvil_qn1_client_router.sv:45:18:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:78:16:      Example path: top_tb.dut.native.dreq_kind
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:121:10:      Example path: top_tb.dut.native.logic_fault
+                    rtl/anvil_qn1_top.sv:218:39:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:16:42:      Example path: top_tb.dut.__Vcellinp__native.bank_scheduler__mem_req_ready
+                    rtl/anvil_qn1_bank_scheduler.sv:53:5:      Example path: ALWAYS
+                    rtl/anvil_qn1_bank_scheduler.sv:45:46:      Example path: top_tb.dut.native.bank_scheduler.legal.transaction_fault
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: top_tb.dut.native.bank_scheduler.__VdfgTmp_haf599044__0
+                    rtl/anvil_qn1_bank_scheduler.sv:94:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:77:46:      Example path: top_tb.dut.native.drsp_valid
+                    rtl/anvil_qn1_bank_scheduler.sv:95:20:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:80:71:      Example path: top_tb.dut.native.drsp_data
+                    rtl/anvil_qn1_client_router.sv:58:68:      Example path: ASSIGNW
+                    rtl/anvil_qn1_decoder.sv:57:38:      Example path: top_tb.dut.native.decoder.rd
+                    rtl/anvil_qn1_decoder.sv:358:14:      Example path: ALWAYS
+                    rtl/anvil_qn1_decoder.sv:358:8:      Example path: top_tb.dut.native.decoder.io_bad
+                    rtl/anvil_qn1_decoder.sv:379:15:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:71:69:      Example path: top_tb.dut.native.decoder_error
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW
+%Warning-UNOPTFLAT: rtl/anvil_qn1_dual_think_ctrl.sv:47:14: Signal unoptimizable: Circular combinational logic: 'top_tb.dut.native.dual_think_ctrl.depths'
+   47 |   wire [2:0] depths [0:3];
+      |              ^~~~~~
+                    rtl/anvil_qn1_dual_think_ctrl.sv:47:14:      Example path: top_tb.dut.native.dual_think_ctrl.depths
+                    rtl/anvil_qn1_dual_think_ctrl.sv:86:19:      Example path: ASSIGNW
+                    rtl/anvil_qn1_dual_think_ctrl.sv:47:14:      Example path: top_tb.dut.native.dual_think_ctrl.depths
+%Warning-UNOPTFLAT: rtl/anvil_qn1_client_router.sv:41:8: Signal unoptimizable: Circular combinational logic: 'top_tb.dut.native.decoder.memory_router.bad_response'
+   41 |   wire bad_response=rsp_valid && rsp_tag[31:28]>=8;
+      |        ^~~~~~~~~~~~
+                    rtl/anvil_qn1_client_router.sv:41:8:      Example path: top_tb.dut.native.decoder.memory_router.bad_response
+                    rtl/anvil_qn1_client_router.sv:43:19:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:77:10:      Example path: top_tb.dut.native.dreq_valid
+                    rtl/anvil_qn1_client_router.sv:44:19:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:77:34:      Example path: top_tb.dut.native.dreq_write
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:121:10:      Example path: top_tb.dut.native.logic_fault
+                    rtl/anvil_qn1_top.sv:218:39:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:16:42:      Example path: top_tb.dut.__Vcellinp__native.bank_scheduler__mem_req_ready
+                    rtl/anvil_qn1_bank_scheduler.sv:53:5:      Example path: ALWAYS
+                    rtl/anvil_qn1_bank_scheduler.sv:45:46:      Example path: top_tb.dut.native.bank_scheduler.legal.transaction_fault
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: top_tb.dut.native.bank_scheduler.__VdfgTmp_haf599044__0
+                    rtl/anvil_qn1_bank_scheduler.sv:94:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:77:46:      Example path: top_tb.dut.native.drsp_valid
+                    rtl/anvil_qn1_bank_scheduler.sv:95:20:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:80:71:      Example path: top_tb.dut.native.drsp_data
+                    rtl/anvil_qn1_client_router.sv:58:68:      Example path: ASSIGNW
+                    rtl/anvil_qn1_decoder.sv:57:38:      Example path: top_tb.dut.native.decoder.rd
+                    rtl/anvil_qn1_decoder.sv:358:14:      Example path: ALWAYS
+                    rtl/anvil_qn1_decoder.sv:358:8:      Example path: top_tb.dut.native.decoder.io_bad
+                    rtl/anvil_qn1_decoder.sv:379:15:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:71:69:      Example path: top_tb.dut.native.decoder_error
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW
+%Warning-UNOPTFLAT: rtl/anvil_qn1_top.sv:77:46: Signal unoptimizable: Circular combinational logic: 'top_tb.dut.native.drsp_valid'
+   77 |     wire dreq_valid, dreq_ready, dreq_write, drsp_valid, drsp_ready, drsp_error;
+      |                                              ^~~~~~~~~~
+                    rtl/anvil_qn1_top.sv:77:46:      Example path: top_tb.dut.native.drsp_valid
+                    rtl/anvil_qn1_bank_scheduler.sv:95:20:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:80:71:      Example path: top_tb.dut.native.drsp_data
+                    rtl/anvil_qn1_client_router.sv:58:68:      Example path: ASSIGNW
+                    rtl/anvil_qn1_decoder.sv:57:38:      Example path: top_tb.dut.native.decoder.rd
+                    rtl/anvil_qn1_decoder.sv:358:14:      Example path: ALWAYS
+                    rtl/anvil_qn1_decoder.sv:358:8:      Example path: top_tb.dut.native.decoder.io_bad
+                    rtl/anvil_qn1_decoder.sv:379:15:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:71:69:      Example path: top_tb.dut.native.decoder_error
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:121:10:      Example path: top_tb.dut.native.logic_fault
+                    rtl/anvil_qn1_top.sv:218:39:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:16:42:      Example path: top_tb.dut.__Vcellinp__native.bank_scheduler__mem_req_ready
+                    rtl/anvil_qn1_bank_scheduler.sv:53:5:      Example path: ALWAYS
+                    rtl/anvil_qn1_bank_scheduler.sv:45:46:      Example path: top_tb.dut.native.bank_scheduler.legal.transaction_fault
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: top_tb.dut.native.bank_scheduler.__VdfgTmp_haf599044__0
+                    rtl/anvil_qn1_bank_scheduler.sv:94:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:77:46:      Example path: top_tb.dut.native.drsp_valid
+%Warning-UNOPTFLAT: rtl/anvil_qn1_gemv.sv:19:14: Signal unoptimizable: Circular combinational logic: 'top_tb.dut.native.decoder.__Vcellinp__projections__rsp_valid'
+   19 |   input wire rsp_valid,
+      |              ^~~~~~~~~
+                    rtl/anvil_qn1_gemv.sv:19:14:      Example path: top_tb.dut.native.decoder.__Vcellinp__projections__rsp_valid
+                    rtl/anvil_qn1_client_router.sv:56:74:      Example path: ASSIGNW
+                    rtl/anvil_qn1_decoder.sv:54:26:      Example path: top_tb.dut.native.decoder.rv
+                    rtl/anvil_qn1_decoder.sv:358:14:      Example path: ALWAYS
+                    rtl/anvil_qn1_decoder.sv:358:8:      Example path: top_tb.dut.native.decoder.io_bad
+                    rtl/anvil_qn1_decoder.sv:379:15:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:71:69:      Example path: top_tb.dut.native.decoder_error
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:121:10:      Example path: top_tb.dut.native.logic_fault
+                    rtl/anvil_qn1_top.sv:218:39:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:16:42:      Example path: top_tb.dut.__Vcellinp__native.bank_scheduler__mem_req_ready
+                    rtl/anvil_qn1_bank_scheduler.sv:53:5:      Example path: ALWAYS
+                    rtl/anvil_qn1_bank_scheduler.sv:45:46:      Example path: top_tb.dut.native.bank_scheduler.legal.transaction_fault
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: top_tb.dut.native.bank_scheduler.__VdfgTmp_haf599044__0
+                    rtl/anvil_qn1_bank_scheduler.sv:94:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:77:46:      Example path: top_tb.dut.native.drsp_valid
+                    rtl/anvil_qn1_bank_scheduler.sv:95:20:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:80:71:      Example path: top_tb.dut.native.drsp_data
+                    rtl/anvil_qn1_client_router.sv:58:68:      Example path: ASSIGNW
+                    rtl/anvil_qn1_decoder.sv:57:38:      Example path: top_tb.dut.native.decoder.rd
+                    rtl/anvil_qn1_decoder.sv:358:14:      Example path: ALWAYS
+%Warning-UNOPTFLAT: rtl/anvil_qn1_gemv.sv:92:55: Signal unoptimizable: Circular combinational logic: 'top_tb.dut.native.decoder.projections.__VdfgTmp_h7552aa46__0'
+   92 |     assign out_valid=rst_n && !flush && !response_bad && !tensor_bad && state==OUTPUT;
+      |                                                       ^~
+                    rtl/anvil_qn1_gemv.sv:92:55:      Example path: top_tb.dut.native.decoder.projections.__VdfgTmp_h7552aa46__0
+                    rtl/anvil_qn1_gemv.sv:98:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_gemv.sv:14:15:      Example path: top_tb.dut.native.decoder.__Vcellout__projections__req_valid
+                    rtl/anvil_qn1_client_router.sv:45:18:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:78:16:      Example path: top_tb.dut.native.dreq_kind
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:121:10:      Example path: top_tb.dut.native.logic_fault
+                    rtl/anvil_qn1_top.sv:218:39:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:16:42:      Example path: top_tb.dut.__Vcellinp__native.bank_scheduler__mem_req_ready
+                    rtl/anvil_qn1_bank_scheduler.sv:53:5:      Example path: ALWAYS
+                    rtl/anvil_qn1_bank_scheduler.sv:45:46:      Example path: top_tb.dut.native.bank_scheduler.legal.transaction_fault
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: top_tb.dut.native.bank_scheduler.__VdfgTmp_haf599044__0
+                    rtl/anvil_qn1_bank_scheduler.sv:94:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:77:46:      Example path: top_tb.dut.native.drsp_valid
+                    rtl/anvil_qn1_bank_scheduler.sv:95:20:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:80:71:      Example path: top_tb.dut.native.drsp_data
+                    rtl/anvil_qn1_client_router.sv:58:68:      Example path: ASSIGNW
+                    rtl/anvil_qn1_decoder.sv:57:38:      Example path: top_tb.dut.native.decoder.rd
+                    rtl/anvil_qn1_decoder.sv:358:14:      Example path: ALWAYS
+                    rtl/anvil_qn1_decoder.sv:358:8:      Example path: top_tb.dut.native.decoder.io_bad
+                    rtl/anvil_qn1_decoder.sv:379:15:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:71:69:      Example path: top_tb.dut.native.decoder_error
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW
+%Warning-UNOPTFLAT: rtl/anvil_qn1_client_router.sv:56:44: Signal unoptimizable: Circular combinational logic: 'top_tb.dut.native.decoder.memory_router.__VdfgTmp_hc7ea6d20__0'
+   56 |     assign client_rsp_valid[client]=active && rsp_valid && !bad_response &&
+      |                                            ^~
+                    rtl/anvil_qn1_client_router.sv:56:44:      Example path: top_tb.dut.native.decoder.memory_router.__VdfgTmp_hc7ea6d20__0
+                    rtl/anvil_qn1_decoder.sv:91:6:      Example path: ASSIGNW
+                    rtl/anvil_qn1_norm_memory.sv:14:14:      Example path: top_tb.dut.native.decoder.__Vcellinp__normalization__rsp_valid
+                    rtl/anvil_qn1_norm_memory.sv:29:20:      Example path: ALWAYS
+                    rtl/anvil_qn1_norm_memory.sv:29:8:      Example path: top_tb.dut.native.decoder.normalization.response_bad
+                    rtl/anvil_qn1_norm_memory.sv:46:19:      Example path: ASSIGNW
+                    rtl/anvil_qn1_norm_memory.sv:9:15:      Example path: top_tb.dut.native.decoder.__Vcellout__normalization__req_valid
+                    rtl/anvil_qn1_client_router.sv:45:18:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:78:16:      Example path: top_tb.dut.native.dreq_kind
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:121:10:      Example path: top_tb.dut.native.logic_fault
+                    rtl/anvil_qn1_top.sv:218:39:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:16:42:      Example path: top_tb.dut.__Vcellinp__native.bank_scheduler__mem_req_ready
+                    rtl/anvil_qn1_bank_scheduler.sv:53:5:      Example path: ALWAYS
+                    rtl/anvil_qn1_bank_scheduler.sv:45:46:      Example path: top_tb.dut.native.bank_scheduler.legal.transaction_fault
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: top_tb.dut.native.bank_scheduler.__VdfgTmp_haf599044__0
+                    rtl/anvil_qn1_bank_scheduler.sv:94:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:77:46:      Example path: top_tb.dut.native.drsp_valid
+                    rtl/anvil_qn1_bank_scheduler.sv:95:20:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:80:71:      Example path: top_tb.dut.native.drsp_data
+                    rtl/anvil_qn1_client_router.sv:58:68:      Example path: ASSIGNW
+                    rtl/anvil_qn1_decoder.sv:57:38:      Example path: top_tb.dut.native.decoder.rd
+                    rtl/anvil_qn1_decoder.sv:358:14:      Example path: ALWAYS
+                    rtl/anvil_qn1_decoder.sv:358:8:      Example path: top_tb.dut.native.decoder.io_bad
+                    rtl/anvil_qn1_decoder.sv:379:15:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:71:69:      Example path: top_tb.dut.native.decoder_error
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW
+%Warning-UNOPTFLAT: rtl/anvil_qn1_client_router.sv:41:41: Signal unoptimizable: Circular combinational logic: 'top_tb.dut.native.decoder.memory_router.__VdfgTmp_h8649b870__0'
+   41 |   wire bad_response=rsp_valid && rsp_tag[31:28]>=8;
+      |                                         ^
+                    rtl/anvil_qn1_client_router.sv:41:41:      Example path: top_tb.dut.native.decoder.memory_router.__VdfgTmp_h8649b870__0
+                    rtl/anvil_qn1_decoder.sv:91:6:      Example path: ASSIGNW
+                    rtl/anvil_qn1_norm_memory.sv:14:14:      Example path: top_tb.dut.native.decoder.__Vcellinp__normalization__rsp_valid
+                    rtl/anvil_qn1_norm_memory.sv:29:20:      Example path: ALWAYS
+                    rtl/anvil_qn1_norm_memory.sv:29:8:      Example path: top_tb.dut.native.decoder.normalization.response_bad
+                    rtl/anvil_qn1_norm_memory.sv:46:19:      Example path: ASSIGNW
+                    rtl/anvil_qn1_norm_memory.sv:9:15:      Example path: top_tb.dut.native.decoder.__Vcellout__normalization__req_valid
+                    rtl/anvil_qn1_client_router.sv:45:18:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:78:16:      Example path: top_tb.dut.native.dreq_kind
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:121:10:      Example path: top_tb.dut.native.logic_fault
+                    rtl/anvil_qn1_top.sv:218:39:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:16:42:      Example path: top_tb.dut.__Vcellinp__native.bank_scheduler__mem_req_ready
+                    rtl/anvil_qn1_bank_scheduler.sv:53:5:      Example path: ALWAYS
+                    rtl/anvil_qn1_bank_scheduler.sv:45:46:      Example path: top_tb.dut.native.bank_scheduler.legal.transaction_fault
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: ASSIGNW
+                    rtl/anvil_qn1_bank_scheduler.sv:92:28:      Example path: top_tb.dut.native.bank_scheduler.__VdfgTmp_haf599044__0
+                    rtl/anvil_qn1_bank_scheduler.sv:94:21:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:77:46:      Example path: top_tb.dut.native.drsp_valid
+                    rtl/anvil_qn1_bank_scheduler.sv:95:20:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:80:71:      Example path: top_tb.dut.native.drsp_data
+                    rtl/anvil_qn1_client_router.sv:58:68:      Example path: ASSIGNW
+                    rtl/anvil_qn1_decoder.sv:57:38:      Example path: top_tb.dut.native.decoder.rd
+                    rtl/anvil_qn1_decoder.sv:358:14:      Example path: ALWAYS
+                    rtl/anvil_qn1_decoder.sv:358:8:      Example path: top_tb.dut.native.decoder.io_bad
+                    rtl/anvil_qn1_decoder.sv:379:15:      Example path: ASSIGNW
+                    rtl/anvil_qn1_top.sv:71:69:      Example path: top_tb.dut.native.decoder_error
+                    rtl/anvil_qn1_top.sv:121:21:      Example path: ASSIGNW

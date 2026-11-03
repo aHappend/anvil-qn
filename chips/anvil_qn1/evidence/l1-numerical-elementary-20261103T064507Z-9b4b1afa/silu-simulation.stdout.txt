@@ -1,0 +1,2 @@
+SUMMARY scalar_cases=137 stalled_outputs=137
+evidence/l1-numerical-elementary-20261103T064507Z-9b4b1afa/silu_tb.sv:60: $finish called at 524410 (1s)

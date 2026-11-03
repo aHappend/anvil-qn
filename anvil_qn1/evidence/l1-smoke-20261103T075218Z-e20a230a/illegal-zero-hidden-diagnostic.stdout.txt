@@ -1,0 +1,2 @@
+FATAL: rtl/anvil_qn1_top.sv:318: ANVIL_QN1 PARAMETER ERROR: profile, geometry or address bounds
+       Time: 0  Scope: illegal_tb.dut.invalid_parameters

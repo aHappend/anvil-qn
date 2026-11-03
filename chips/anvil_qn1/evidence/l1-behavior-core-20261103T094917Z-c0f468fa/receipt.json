@@ -1,0 +1,1993 @@
+{
+  "kind": "independent-l1",
+  "entrypoint_argv": [
+    "python3",
+    "tests/verify.py",
+    "--suite",
+    "behavior"
+  ],
+  "entrypoint_cwd": ".",
+  "start": "2026-11-03T09:49:17.700450+00:00",
+  "end": "2026-11-03T10:19:48.899865+00:00",
+  "status": "passed",
+  "source_sha256": {
+    "README.md": "ab4113d32d5b8fc7d63f5ad326e5d8972436425ac72946110a6d178005cda63a",
+    "anvil_q3_reference/rtl/anvil_q3_00_pkg.sv": "125df857f6d70b379aa4b4a2cf35fe72a839852201c6fcd470e2af457fa211ce",
+    "anvil_q3_reference/rtl/anvil_q3_accumulator.sv": "b4cc65bcb0ccdaf19d3f50a799abb4a3a097dc2de60897d083216f15cc13bd00",
+    "anvil_q3_reference/rtl/anvil_q3_add128.sv": "c72ef3d105339e73a0b39b4bc2da9fd09d58d89fb7f74ec60dba18a0f7e6c84f",
+    "anvil_q3_reference/rtl/anvil_q3_awq_dot8.sv": "04373f36c70dd1529925de6e8234c371f4e2507590f09ee4e23b0d4fe2249862",
+    "anvil_q3_reference/rtl/anvil_q3_bank_scheduler.sv": "b8b054826bb015ba222d83de6bdb6c793cfa3185b929474e9bf7a7a85bf8104a",
+    "anvil_q3_reference/rtl/anvil_q3_cache_codec.sv": "4340cd77867041800326c813d9f4cde7a6148491bb21bd4e27dec66c4ccf9044",
+    "anvil_q3_reference/rtl/anvil_q3_decoder_layer.sv": "1494ea7a91fd6e382ff61c8fda083cb9f452e70e7868ef73b2048ad7f9720fa2",
+    "anvil_q3_reference/rtl/anvil_q3_divider.sv": "477d8babc9c614933484a71817deb22f6c2c9ebdab3654ed8c2ea78d77c276d0",
+    "anvil_q3_reference/rtl/anvil_q3_elementwise.sv": "613f91a6e793fd276793221efe4bc2f114c5f880db906fb559af328b43d5258f",
+    "anvil_q3_reference/rtl/anvil_q3_exp.sv": "b8c674a40c02964c9086cfc2301b4f03ffb5381782c1a2c65b9c93bcab215fb3",
+    "anvil_q3_reference/rtl/anvil_q3_gemv.sv": "7f0f0795f5d75c7498aafaf8f311ca3ac86fb8094b21473279fa676d925a793b",
+    "anvil_q3_reference/rtl/anvil_q3_gqa_attention.sv": "4342cb3c3e7bc281647140dd0ed54264288405b21c9292a6698a6ca857715f70",
+    "anvil_q3_reference/rtl/anvil_q3_isqrt.sv": "aa5cb01b5cd7c5c7cd3dd2dffab5fc83c8395010974c238b015b7b486b25c1e9",
+    "anvil_q3_reference/rtl/anvil_q3_kv_cache.sv": "c1cb7e3841aaf2bbe0ce3550c6fca616522d19b1eee57a1fc4bc952d5f377018",
+    "anvil_q3_reference/rtl/anvil_q3_mem_port.sv": "10069d98fda414a2206161c570ea6da9aeb9a254ab3d7e4f715a8f0082875856",
+    "anvil_q3_reference/rtl/anvil_q3_multiplier.sv": "c69142e8d4d2a663bdd0c7edbe22795b2104a9189b2f493a33dd60c1082dfaac",
+    "anvil_q3_reference/rtl/anvil_q3_parameters.sv": "f2cf2f694fac710809dd182465e16b591f59a8fc645c85d88a574d8d4e9b68fb",
+    "anvil_q3_reference/rtl/anvil_q3_rmsnorm.sv": "a5afd4439e85469bdb82b5eb21b33008860ef602362b7e70591c2dc7ce786f20",
+    "anvil_q3_reference/rtl/anvil_q3_rope.sv": "b71132e4de12828dbf7fe435514cdb7e15fc119ba6d6dfa3f414896b443989f4",
+    "anvil_q3_reference/rtl/anvil_q3_signed_divider.sv": "746c34c31223f1efc29f1d6baa83a873f0ec3487bb40058a38f0a796ee389dfb",
+    "anvil_q3_reference/rtl/anvil_q3_silu.sv": "87b2404e881ff5890adb294d50ce704f5fe165c4743cb133d7e8cea7fb78d3e6",
+    "anvil_q3_reference/rtl/anvil_q3_swiglu_mlp.sv": "3aa20f8f6b53e4b34616900932358e124a072b53c0dbe2c1392deb17586456c6",
+    "anvil_q3_reference/rtl/anvil_q3_tensor_array.sv": "a191b1958ad5e8fe9198c80588be15de012d3ab311aeb32f974b344f6d6cf70d",
+    "anvil_q3_reference/rtl/anvil_q3_token_io.sv": "2ede1a568ace2826f5bde419d0096368fc0ba7bb0f1b44a5238f14c1a16957d4",
+    "anvil_q3_reference/rtl/anvil_q3_top.sv": "e6d5f9edcf88e48c8dc5f3cd441c55a4d2aa9399891ef9133ba1125cbc6bac08",
+    "anvil_q3_reference/rtl/anvil_q3_weight_prefetcher.sv": "0fe777447f348cad8a0659ee4522f598643c8d694f1934f6951388d0d226fc7b",
+    "design/ARCHITECTURE.md": "fb38eb8c47c179d64706ae4723a4c5c3d84ab1717c551d08133a8ac304908999",
+    "design/GENERATIONAL_HANDOFF.md": "7df52d1282f8949a86201deeb837c5f8096ae21c1c39231ae90c7e915819f096",
+    "design/SPEC.md": "f339e52b0866787031e497959f688522b7d4ae49c82cabf368f85fcc031677c7",
+    "rtl/anvil_q3_00_pkg.sv": "125df857f6d70b379aa4b4a2cf35fe72a839852201c6fcd470e2af457fa211ce",
+    "rtl/anvil_q3_accumulator.sv": "b4cc65bcb0ccdaf19d3f50a799abb4a3a097dc2de60897d083216f15cc13bd00",
+    "rtl/anvil_q3_add128.sv": "c72ef3d105339e73a0b39b4bc2da9fd09d58d89fb7f74ec60dba18a0f7e6c84f",
+    "rtl/anvil_q3_awq_dot8.sv": "04373f36c70dd1529925de6e8234c371f4e2507590f09ee4e23b0d4fe2249862",
+    "rtl/anvil_q3_bank_scheduler.sv": "b8b054826bb015ba222d83de6bdb6c793cfa3185b929474e9bf7a7a85bf8104a",
+    "rtl/anvil_q3_cache_codec.sv": "4340cd77867041800326c813d9f4cde7a6148491bb21bd4e27dec66c4ccf9044",
+    "rtl/anvil_q3_decoder_layer.sv": "1494ea7a91fd6e382ff61c8fda083cb9f452e70e7868ef73b2048ad7f9720fa2",
+    "rtl/anvil_q3_divider.sv": "477d8babc9c614933484a71817deb22f6c2c9ebdab3654ed8c2ea78d77c276d0",
+    "rtl/anvil_q3_elementwise.sv": "613f91a6e793fd276793221efe4bc2f114c5f880db906fb559af328b43d5258f",
+    "rtl/anvil_q3_exp.sv": "b8c674a40c02964c9086cfc2301b4f03ffb5381782c1a2c65b9c93bcab215fb3",
+    "rtl/anvil_q3_gemv.sv": "7f0f0795f5d75c7498aafaf8f311ca3ac86fb8094b21473279fa676d925a793b",
+    "rtl/anvil_q3_gqa_attention.sv": "4342cb3c3e7bc281647140dd0ed54264288405b21c9292a6698a6ca857715f70",
+    "rtl/anvil_q3_isqrt.sv": "aa5cb01b5cd7c5c7cd3dd2dffab5fc83c8395010974c238b015b7b486b25c1e9",
+    "rtl/anvil_q3_kv_cache.sv": "c1cb7e3841aaf2bbe0ce3550c6fca616522d19b1eee57a1fc4bc952d5f377018",
+    "rtl/anvil_q3_mem_port.sv": "10069d98fda414a2206161c570ea6da9aeb9a254ab3d7e4f715a8f0082875856",
+    "rtl/anvil_q3_multiplier.sv": "c69142e8d4d2a663bdd0c7edbe22795b2104a9189b2f493a33dd60c1082dfaac",
+    "rtl/anvil_q3_parameters.sv": "f2cf2f694fac710809dd182465e16b591f59a8fc645c85d88a574d8d4e9b68fb",
+    "rtl/anvil_q3_rmsnorm.sv": "a5afd4439e85469bdb82b5eb21b33008860ef602362b7e70591c2dc7ce786f20",
+    "rtl/anvil_q3_rope.sv": "b71132e4de12828dbf7fe435514cdb7e15fc119ba6d6dfa3f414896b443989f4",
+    "rtl/anvil_q3_signed_divider.sv": "746c34c31223f1efc29f1d6baa83a873f0ec3487bb40058a38f0a796ee389dfb",
+    "rtl/anvil_q3_silu.sv": "87b2404e881ff5890adb294d50ce704f5fe165c4743cb133d7e8cea7fb78d3e6",
+    "rtl/anvil_q3_swiglu_mlp.sv": "3aa20f8f6b53e4b34616900932358e124a072b53c0dbe2c1392deb17586456c6",
+    "rtl/anvil_q3_tensor_array.sv": "a191b1958ad5e8fe9198c80588be15de012d3ab311aeb32f974b344f6d6cf70d",
+    "rtl/anvil_q3_token_io.sv": "2ede1a568ace2826f5bde419d0096368fc0ba7bb0f1b44a5238f14c1a16957d4",
+    "rtl/anvil_q3_top.sv": "e6d5f9edcf88e48c8dc5f3cd441c55a4d2aa9399891ef9133ba1125cbc6bac08",
+    "rtl/anvil_q3_weight_prefetcher.sv": "0fe777447f348cad8a0659ee4522f598643c8d694f1934f6951388d0d226fc7b",
+    "rtl/anvil_qn1_00_pkg.sv": "756017bdb5e31d257335f3d56b18d26e78cb90dd80f089c0030db46ba60cdc3d",
+    "rtl/anvil_qn1_attention.sv": "a4321bbb753d8bc47b3f70303d4fe88291aabb7fed47668e579e1ab80973bfc4",
+    "rtl/anvil_qn1_bank_scheduler.sv": "fa181e796e1965abb000c867e7f25e4190e8ebd5e75e903c8cf46f29fc386cf4",
+    "rtl/anvil_qn1_client_router.sv": "a66d254356e31cf5306a83aabf93001335802039a26f42f8c5fc2e79f48876a4",
+    "rtl/anvil_qn1_csr_perf.sv": "12c622b105bfe8a6752790428be1830af07dd1970b5f2260360e6187fb2f3f99",
+    "rtl/anvil_qn1_decoder.sv": "6f0c6cbbef30e9b25d3444ce3543b2a1c34fcf2a2951708658f92b4a173b8ba1",
+    "rtl/anvil_qn1_dual_think_ctrl.sv": "f17cdbe93024b09528b720c0ef1725b5134651f3ccd8411fe8aec4d72ccadda0",
+    "rtl/anvil_qn1_elementwise.sv": "e9291881eecb0d558a9fdb97e643558bb695a52ebec91ea01b49a87c654c5b86",
+    "rtl/anvil_qn1_exp.sv": "5111181dc03993d62c9511a5854cf78efd2258e46d1f57d8739176519276d122",
+    "rtl/anvil_qn1_fp32_add.sv": "b6a6e5269f6ae181be77e1aca6e1f06981ee8049194b600a4c92231591d8b722",
+    "rtl/anvil_qn1_fp32_div.sv": "e8773598b10e4e9b3780fd64b9755c2f6acaaca9b0d19cce517909dd9c0d90d9",
+    "rtl/anvil_qn1_fp32_mul.sv": "cb8694dc1b1458ea96966f31ee6f9c739bad058bae3cb2a41bf5e4759f7f1491",
+    "rtl/anvil_qn1_fp32_sqrt.sv": "7aa5faacd7aa2dadd017b7000b7b73cdeeec7e355fef124e6d2f4575c175648e",
+    "rtl/anvil_qn1_gemv.sv": "515153c305ca08ec0db2d9a5726b96bd191814cad07106d86dada3b3c1612331",
+    "rtl/anvil_qn1_head_buffer.sv": "a7721c33fa71d22b7a3948b7afa12285aa4e497fd96b7fe4c5cb308ab8e3751a",
+    "rtl/anvil_qn1_mlp.sv": "0ef2daf33db3951d8e829a5bce9a314a6cb88d831c49a7afb8f3221f188b3349",
+    "rtl/anvil_qn1_norm_memory.sv": "a521d9c81ced3dee2f71ab4d32e6c6a10c678e35827b23a3c03b014f7ef25555",
+    "rtl/anvil_qn1_parameters.sv": "aef4414dc1714ab1f43ad537a3a55db444d48b82b38e8593df33f9bf457a35e3",
+    "rtl/anvil_qn1_qknorm_rope.sv": "b98dc78b32ffd61c453ed5010dd4cd0cb61685da98d80e9d381711203bd06430",
+    "rtl/anvil_qn1_rmsnorm.sv": "def94137e03e585456660ddb8a407bb49fd37b9fa4c8935f260a5c1c6db8212d",
+    "rtl/anvil_qn1_scalar.sv": "83adaade3a2204f0499d249527a4386ddf9b09e2d99b155611f9ca799f5df2f1",
+    "rtl/anvil_qn1_silu.sv": "bb87d62d1d08ef6fb37a73678c48c2b6201160506d18fc50bda9ebcc4f7e2a4f",
+    "rtl/anvil_qn1_tensor_array.sv": "884fc412fefac2676092af367b202bf678be2c87eecbcf9caa498b75fd2b021a",
+    "rtl/anvil_qn1_top.sv": "ea147b32108fa51c9fb635d2814ae1319e14e5d7c1a0c62874371e5d5db7ab40",
+    "tests/behavior_checks.py": "db009b3b9c6690b6f76497c2ec96bf91c8cd2589d3d2387ad894b1f84d62a68e",
+    "tests/behavior_suite.py": "899cc5d107bb23eab8b0e3e64fb183956dd3a3d329d1af1d1dcd93963abfa2c0",
+    "tests/benchmark_checks.py": "bab46daaeaf7396145d090fb124dab073c0d615a0666e847324e9268ace4c7ca",
+    "tests/budget.py": "59af2334597c77f53dd972e1da5e624a75347d7cdaed6e627895d454dd28f3bd",
+    "tests/checker_checks.py": "931ad67cb87f09600f5c84f528fd71db155fc374ba015376fe7af86563e49d50",
+    "tests/component_cache.py": "c1599fa1fa4dcf34beb1416846761ef89d54728669173023b3943e826febfc25",
+    "tests/context_checks.py": "bbdae9baf914463f34f5f3addf9444f4e9a0468f7e368bed724f0ec60ed9084a",
+    "tests/control_checks.py": "43d7eec4f127e076348557e50fdaa5015baf56e99d75473ab4b88769e1a34c2a",
+    "tests/defect_checks.py": "10319f273a82ae26c9f46a7b83e90d37293922c5d0d075dfc45938d28bc090fe",
+    "tests/execution.py": "cb242a8b03af72de03664b2ed402b47d092bef6f2b50cb22cb4d50ba08f5f88a",
+    "tests/fault_checks.py": "696bec38471419a70c282f70fb5b9cb99c423a2f2b840e88cd31abfc7e74ff75",
+    "tests/integration.py": "071e36b7280b5e5e301befa28ba745937384f80e2d8ea6b25c18c199a6be9929",
+    "tests/leaf_checks.py": "0c738e61b7202b4a9d56a8c5c271d6899ec8ed337955f9595d402f84093a9196",
+    "tests/marker_checks.py": "d88654965f026b5d5877ea8db175a9a69660bb764b492cb1b4d53f3bc21e6942",
+    "tests/memory_checks.py": "be983836d2ff1040e14a2a9a91d45a5be5d26ff4a5a23b6f45778b465a64be7f",
+    "tests/model.py": "ad42254367b45a9e559ea87433d4f67fed24bbf89f09b65e841bf468ae3eafb9",
+    "tests/numerical_checks.py": "99593b0b0b3ffe5a9b13fa6c5e4b1294e60ffb10da630d98df890257e6219ee2",
+    "tests/parent_checks.py": "bd96c9eb095284327b78c51c0e690e54bfbbccab103af1d9dc363e0f6e26f769",
+    "tests/prefill_marker_checks.py": "a050327e845ac9280d44ed17d76f17c21bc5dd58609e115e0c3daeeba925cc28",
+    "tests/production_checks.py": "406f82e6dd444aa8ec573ac203f3d33b8e0ee9082c4e90d5d64b6f7d83d796eb",
+    "tests/reference.py": "19a579cdf753685e2d53e7bdc2a4d944dabe98873ba01a6db9be46d4f6c1a1c0",
+    "tests/reproduction_checks.py": "4899df6a989865bbdc404aeb8f28df464e2ee6c79e100b82137c2e3d73e3b865",
+    "tests/smoke_checks.py": "9839f9dde9930a4e6df133c8f9a1746b4c03259ad6a58f5c2fc192c1e276fde4",
+    "tests/speculation_checks.py": "86f0270bf39d62ef6bc3c1475500f74587c4736b7d02e9c6911e378e6c4553cc",
+    "tests/speculative_fault_checks.py": "eab752e7b7cbf0387dce96bfb075dc70ecb9de6e816b790d0437739877a4ca50",
+    "tests/suite_dispatch.py": "683c62d1432b63199bea5a41b90eedbba236d13803a9e6b572e8895ff43ef352",
+    "tests/synthesis_checks.py": "1d16a220d0f1efbc989fc379f37c7e3a81f733b8b8ab3e6437fb874495b882ca",
+    "tests/telemetry_checks.py": "be95f343d18ee867ff552c8d30024069f8523deee7552c2ed1e2f082967553bf",
+    "tests/verify.py": "c3279dba7aecee1325fde11fd6db97d63dfbd316e7ee62acb221dc652ceda284"
+  },
+  "tool_versions": {
+    "python3": "Python 3.12.3\n",
+    "verilator": "Verilator 5.020 2024-01-01 rev (Debian 5.020-1)\n",
+    "g++": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "make": "GNU Make 4.3\nBuilt for x86_64-pc-linux-gnu\nCopyright (C) 1988-2020 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n",
+    "yosys": "Yosys 0.33 (git sha1 2584903a060)\n"
+  },
+  "commands": [],
+  "components": [
+    {
+      "receipt": "evidence/l1-behavior-core-case00-20261103T094917Z-daf33fc5/receipt.json",
+      "status": "passed"
+    },
+    {
+      "receipt": "evidence/l1-behavior-core-case01-20261103T095430Z-3d61b5fb/receipt.json",
+      "status": "passed"
+    },
+    {
+      "receipt": "evidence/l1-behavior-core-case02-20261103T095501Z-0e732f31/receipt.json",
+      "status": "passed"
+    },
+    {
+      "receipt": "evidence/l1-behavior-core-case03-20261103T095532Z-2dfacaf7/receipt.json",
+      "status": "passed"
+    },
+    {
+      "receipt": "evidence/l1-behavior-core-case04-20261103T095604Z-db88514d/receipt.json",
+      "status": "passed"
+    },
+    {
+      "receipt": "evidence/l1-behavior-core-case05-20261103T095643Z-b7420347/receipt.json",
+      "status": "passed"
+    },
+    {
+      "receipt": "evidence/l1-behavior-core-case06-20261103T095715Z-33d8a9b2/receipt.json",
+      "status": "passed"
+    },
+    {
+      "receipt": "evidence/l1-behavior-core-case07-20261103T100220Z-2907c0a8/receipt.json",
+      "status": "passed"
+    },
+    {
+      "receipt": "evidence/l1-behavior-core-case08-20261103T100300Z-2f8da31b/receipt.json",
+      "status": "passed"
+    },
+    {
+      "receipt": "evidence/l1-behavior-core-case09-20261103T100339Z-7dac0065/receipt.json",
+      "status": "passed"
+    },
+    {
+      "receipt": "evidence/l1-behavior-core-case10-20261103T100417Z-6490a421/receipt.json",
+      "status": "passed"
+    },
+    {
+      "receipt": "evidence/l1-behavior-core-case11-20261103T100501Z-a07d663c/receipt.json",
+      "status": "passed"
+    },
+    {
+      "receipt": "evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/receipt.json",
+      "status": "passed"
+    },
+    {
+      "receipt": "evidence/l1-behavior-core-case13-20261103T101015Z-36009dee/receipt.json",
+      "status": "passed"
+    },
+    {
+      "receipt": "evidence/l1-behavior-core-case14-20261103T101501Z-ac31eb13/receipt.json",
+      "status": "passed"
+    }
+  ],
+  "results": {
+    "scope": "incremental behavior core, not full behavior closure",
+    "cases": [
+      {
+        "seed": 17,
+        "geometry": {
+          "hidden": 8,
+          "intermediate": 8,
+          "q_heads": 2,
+          "kv_heads": 1,
+          "head_dim": 8,
+          "layers": 1,
+          "vocabulary": 8,
+          "max_sequence": 16,
+          "group": 8
+        },
+        "prefix": 0,
+        "branching": false,
+        "evaluations": [
+          {
+            "token": 3,
+            "position": 0,
+            "argmax": 4,
+            "maximum_absolute_score": 1063627050
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "argmax": 4,
+            "maximum_absolute_score": 1069478374
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "argmax": 4,
+            "maximum_absolute_score": 1069478374
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "argmax": 4,
+            "maximum_absolute_score": 1069478374
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "argmax": 4,
+            "maximum_absolute_score": 1069478374
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "argmax": 4,
+            "maximum_absolute_score": 1069478374
+          }
+        ],
+        "transactions": [
+          {
+            "token": 3,
+            "position": 0,
+            "phase": 0,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 1
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "phase": 1,
+            "nodes": [
+              5,
+              4,
+              4,
+              4
+            ],
+            "parents": [
+              4,
+              0,
+              1,
+              2
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 2
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 3
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 4
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 5
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 6
+          }
+        ],
+        "raw_summary": "REJECTED continuation_fault=1\nSUMMARY transactions=6 frames=6 logits=48 key_writes=48 value_writes=48 memory_requests=11328 cycles=126374\n- evidence/l1-behavior-core-case00-20261103T094917Z-daf33fc5/speculative_tb.sv:381: Verilog $finish\n",
+        "compiled_binary": "evidence/l1-behavior-core-case00-20261103T094917Z-daf33fc5/obj-speculative/simulate",
+        "continuation_fault": 1
+      },
+      {
+        "seed": 89,
+        "geometry": {
+          "hidden": 8,
+          "intermediate": 8,
+          "q_heads": 2,
+          "kv_heads": 1,
+          "head_dim": 8,
+          "layers": 1,
+          "vocabulary": 8,
+          "max_sequence": 16,
+          "group": 8
+        },
+        "prefix": 1,
+        "branching": false,
+        "evaluations": [
+          {
+            "token": 3,
+            "position": 0,
+            "argmax": 3,
+            "maximum_absolute_score": 1058263804
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "argmax": 4,
+            "maximum_absolute_score": 1058571639
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "argmax": 4,
+            "maximum_absolute_score": 1058571639
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "argmax": 4,
+            "maximum_absolute_score": 1063797531
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "argmax": 4,
+            "maximum_absolute_score": 1068790445
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "argmax": 4,
+            "maximum_absolute_score": 1069753655
+          }
+        ],
+        "transactions": [
+          {
+            "token": 3,
+            "position": 0,
+            "phase": 0,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 1
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "phase": 1,
+            "nodes": [
+              4,
+              5,
+              4,
+              4
+            ],
+            "parents": [
+              4,
+              0,
+              1,
+              2
+            ],
+            "generated": [
+              4,
+              4
+            ],
+            "frames_through_transaction": 3
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 4
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 5
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 6
+          }
+        ],
+        "raw_summary": "REJECTED continuation_fault=2\nSUMMARY transactions=5 frames=6 logits=48 key_writes=48 value_writes=48 memory_requests=11328 cycles=126352\n- evidence/l1-behavior-core-case00-20261103T094917Z-daf33fc5/speculative_tb.sv:381: Verilog $finish\n",
+        "compiled_binary": "evidence/l1-behavior-core-case00-20261103T094917Z-daf33fc5/obj-speculative/simulate",
+        "continuation_fault": 2
+      },
+      {
+        "seed": 203,
+        "geometry": {
+          "hidden": 8,
+          "intermediate": 8,
+          "q_heads": 2,
+          "kv_heads": 1,
+          "head_dim": 8,
+          "layers": 1,
+          "vocabulary": 8,
+          "max_sequence": 16,
+          "group": 8
+        },
+        "prefix": 2,
+        "branching": false,
+        "evaluations": [
+          {
+            "token": 3,
+            "position": 0,
+            "argmax": 3,
+            "maximum_absolute_score": 1054301034
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "argmax": 4,
+            "maximum_absolute_score": 1074145656
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "argmax": 4,
+            "maximum_absolute_score": 1074390898
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "argmax": 4,
+            "maximum_absolute_score": 1074486254
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "argmax": 4,
+            "maximum_absolute_score": 1074488740
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "argmax": 4,
+            "maximum_absolute_score": 1074488740
+          }
+        ],
+        "transactions": [
+          {
+            "token": 3,
+            "position": 0,
+            "phase": 0,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 1
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "phase": 1,
+            "nodes": [
+              4,
+              4,
+              5,
+              4
+            ],
+            "parents": [
+              4,
+              0,
+              1,
+              2
+            ],
+            "generated": [
+              4,
+              4,
+              4
+            ],
+            "frames_through_transaction": 4
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 5
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 6
+          }
+        ],
+        "raw_summary": "REJECTED continuation_fault=3\nSUMMARY transactions=4 frames=6 logits=48 key_writes=48 value_writes=48 memory_requests=11328 cycles=126356\n- evidence/l1-behavior-core-case00-20261103T094917Z-daf33fc5/speculative_tb.sv:381: Verilog $finish\n",
+        "compiled_binary": "evidence/l1-behavior-core-case00-20261103T094917Z-daf33fc5/obj-speculative/simulate",
+        "continuation_fault": 3
+      },
+      {
+        "seed": 17,
+        "geometry": {
+          "hidden": 8,
+          "intermediate": 8,
+          "q_heads": 2,
+          "kv_heads": 1,
+          "head_dim": 8,
+          "layers": 1,
+          "vocabulary": 8,
+          "max_sequence": 16,
+          "group": 8
+        },
+        "prefix": 3,
+        "branching": false,
+        "evaluations": [
+          {
+            "token": 3,
+            "position": 0,
+            "argmax": 4,
+            "maximum_absolute_score": 1063627050
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "argmax": 4,
+            "maximum_absolute_score": 1069478374
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "argmax": 4,
+            "maximum_absolute_score": 1069478374
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "argmax": 4,
+            "maximum_absolute_score": 1069478374
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "argmax": 4,
+            "maximum_absolute_score": 1069478374
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "argmax": 4,
+            "maximum_absolute_score": 1069478374
+          }
+        ],
+        "transactions": [
+          {
+            "token": 3,
+            "position": 0,
+            "phase": 0,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 1
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "phase": 1,
+            "nodes": [
+              4,
+              4,
+              4,
+              5
+            ],
+            "parents": [
+              4,
+              0,
+              1,
+              2
+            ],
+            "generated": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "frames_through_transaction": 5
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 6
+          }
+        ],
+        "raw_summary": "REJECTED continuation_fault=1\nSUMMARY transactions=3 frames=6 logits=48 key_writes=48 value_writes=48 memory_requests=11328 cycles=126341\n- evidence/l1-behavior-core-case00-20261103T094917Z-daf33fc5/speculative_tb.sv:381: Verilog $finish\n",
+        "compiled_binary": "evidence/l1-behavior-core-case00-20261103T094917Z-daf33fc5/obj-speculative/simulate",
+        "continuation_fault": 1
+      },
+      {
+        "seed": 89,
+        "geometry": {
+          "hidden": 8,
+          "intermediate": 8,
+          "q_heads": 2,
+          "kv_heads": 1,
+          "head_dim": 8,
+          "layers": 1,
+          "vocabulary": 8,
+          "max_sequence": 16,
+          "group": 8
+        },
+        "prefix": 4,
+        "branching": false,
+        "evaluations": [
+          {
+            "token": 3,
+            "position": 0,
+            "argmax": 3,
+            "maximum_absolute_score": 1058263804
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "argmax": 4,
+            "maximum_absolute_score": 1058571639
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "argmax": 4,
+            "maximum_absolute_score": 1058571639
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "argmax": 4,
+            "maximum_absolute_score": 1063797531
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "argmax": 4,
+            "maximum_absolute_score": 1068790445
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "argmax": 4,
+            "maximum_absolute_score": 1069753655
+          },
+          {
+            "token": 4,
+            "position": 6,
+            "argmax": 4,
+            "maximum_absolute_score": 1069753655
+          }
+        ],
+        "transactions": [
+          {
+            "token": 3,
+            "position": 0,
+            "phase": 0,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 1
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "phase": 1,
+            "nodes": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "parents": [
+              4,
+              0,
+              1,
+              2
+            ],
+            "generated": [
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "frames_through_transaction": 6
+          },
+          {
+            "token": 4,
+            "position": 6,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 7
+          }
+        ],
+        "raw_summary": "REJECTED continuation_fault=2\nSUMMARY transactions=3 frames=7 logits=56 key_writes=56 value_writes=56 memory_requests=13384 cycles=151762\n- evidence/l1-behavior-core-case00-20261103T094917Z-daf33fc5/speculative_tb.sv:381: Verilog $finish\n",
+        "compiled_binary": "evidence/l1-behavior-core-case00-20261103T094917Z-daf33fc5/obj-speculative/simulate",
+        "continuation_fault": 2
+      },
+      {
+        "seed": 203,
+        "geometry": {
+          "hidden": 8,
+          "intermediate": 8,
+          "q_heads": 2,
+          "kv_heads": 1,
+          "head_dim": 8,
+          "layers": 1,
+          "vocabulary": 8,
+          "max_sequence": 16,
+          "group": 8
+        },
+        "prefix": 2,
+        "branching": true,
+        "evaluations": [
+          {
+            "token": 3,
+            "position": 0,
+            "argmax": 3,
+            "maximum_absolute_score": 1054301034
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "argmax": 4,
+            "maximum_absolute_score": 1074145656
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "argmax": 4,
+            "maximum_absolute_score": 1074390898
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "argmax": 4,
+            "maximum_absolute_score": 1074486254
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "argmax": 4,
+            "maximum_absolute_score": 1074488740
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "argmax": 4,
+            "maximum_absolute_score": 1074488740
+          }
+        ],
+        "transactions": [
+          {
+            "token": 3,
+            "position": 0,
+            "phase": 0,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 1
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "phase": 1,
+            "nodes": [
+              5,
+              4,
+              4,
+              6
+            ],
+            "parents": [
+              4,
+              4,
+              1,
+              0
+            ],
+            "generated": [
+              4,
+              4,
+              4
+            ],
+            "frames_through_transaction": 4
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 5
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 6
+          }
+        ],
+        "raw_summary": "REJECTED continuation_fault=1\nSUMMARY transactions=4 frames=6 logits=48 key_writes=48 value_writes=48 memory_requests=11328 cycles=126356\n- evidence/l1-behavior-core-case00-20261103T094917Z-daf33fc5/speculative_tb.sv:381: Verilog $finish\n",
+        "compiled_binary": "evidence/l1-behavior-core-case00-20261103T094917Z-daf33fc5/obj-speculative/simulate",
+        "continuation_fault": 1
+      },
+      {
+        "seed": 17,
+        "geometry": {
+          "hidden": 8,
+          "intermediate": 8,
+          "q_heads": 4,
+          "kv_heads": 1,
+          "head_dim": 8,
+          "layers": 1,
+          "vocabulary": 8,
+          "max_sequence": 16,
+          "group": 8
+        },
+        "prefix": 0,
+        "branching": false,
+        "evaluations": [
+          {
+            "token": 3,
+            "position": 0,
+            "argmax": 4,
+            "maximum_absolute_score": 1072800985
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "argmax": 4,
+            "maximum_absolute_score": 1077407916
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "argmax": 4,
+            "maximum_absolute_score": 1077407916
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "argmax": 4,
+            "maximum_absolute_score": 1077407916
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "argmax": 4,
+            "maximum_absolute_score": 1077407916
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "argmax": 4,
+            "maximum_absolute_score": 1077407916
+          }
+        ],
+        "transactions": [
+          {
+            "token": 3,
+            "position": 0,
+            "phase": 0,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 1
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "phase": 1,
+            "nodes": [
+              5,
+              4,
+              4,
+              4
+            ],
+            "parents": [
+              4,
+              0,
+              1,
+              2
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 2
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 3
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 4
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 5
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 6
+          }
+        ],
+        "raw_summary": "REJECTED continuation_fault=1\nSUMMARY transactions=6 frames=6 logits=48 key_writes=48 value_writes=48 memory_requests=16080 cycles=172259\n- evidence/l1-behavior-core-case06-20261103T095715Z-33d8a9b2/speculative_tb.sv:381: Verilog $finish\n",
+        "compiled_binary": "evidence/l1-behavior-core-case06-20261103T095715Z-33d8a9b2/obj-speculative/simulate",
+        "continuation_fault": 1
+      },
+      {
+        "seed": 89,
+        "geometry": {
+          "hidden": 8,
+          "intermediate": 8,
+          "q_heads": 4,
+          "kv_heads": 1,
+          "head_dim": 8,
+          "layers": 1,
+          "vocabulary": 8,
+          "max_sequence": 16,
+          "group": 8
+        },
+        "prefix": 1,
+        "branching": false,
+        "evaluations": [
+          {
+            "token": 3,
+            "position": 0,
+            "argmax": 3,
+            "maximum_absolute_score": 1053488922
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "argmax": 4,
+            "maximum_absolute_score": 1069248506
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "argmax": 4,
+            "maximum_absolute_score": 1069248506
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "argmax": 4,
+            "maximum_absolute_score": 1069248506
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "argmax": 4,
+            "maximum_absolute_score": 1069248506
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "argmax": 4,
+            "maximum_absolute_score": 1072411327
+          }
+        ],
+        "transactions": [
+          {
+            "token": 3,
+            "position": 0,
+            "phase": 0,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 1
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "phase": 1,
+            "nodes": [
+              4,
+              5,
+              4,
+              4
+            ],
+            "parents": [
+              4,
+              0,
+              1,
+              2
+            ],
+            "generated": [
+              4,
+              4
+            ],
+            "frames_through_transaction": 3
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 4
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 5
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 6
+          }
+        ],
+        "raw_summary": "REJECTED continuation_fault=2\nSUMMARY transactions=5 frames=6 logits=48 key_writes=48 value_writes=48 memory_requests=16080 cycles=172346\n- evidence/l1-behavior-core-case06-20261103T095715Z-33d8a9b2/speculative_tb.sv:381: Verilog $finish\n",
+        "compiled_binary": "evidence/l1-behavior-core-case06-20261103T095715Z-33d8a9b2/obj-speculative/simulate",
+        "continuation_fault": 2
+      },
+      {
+        "seed": 203,
+        "geometry": {
+          "hidden": 8,
+          "intermediate": 8,
+          "q_heads": 4,
+          "kv_heads": 1,
+          "head_dim": 8,
+          "layers": 1,
+          "vocabulary": 8,
+          "max_sequence": 16,
+          "group": 8
+        },
+        "prefix": 2,
+        "branching": false,
+        "evaluations": [
+          {
+            "token": 3,
+            "position": 0,
+            "argmax": 3,
+            "maximum_absolute_score": 1072667305
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "argmax": 4,
+            "maximum_absolute_score": 1072667305
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "argmax": 4,
+            "maximum_absolute_score": 1072667305
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "argmax": 4,
+            "maximum_absolute_score": 1072667305
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "argmax": 4,
+            "maximum_absolute_score": 1072667305
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "argmax": 4,
+            "maximum_absolute_score": 1072667305
+          }
+        ],
+        "transactions": [
+          {
+            "token": 3,
+            "position": 0,
+            "phase": 0,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 1
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "phase": 1,
+            "nodes": [
+              4,
+              4,
+              5,
+              4
+            ],
+            "parents": [
+              4,
+              0,
+              1,
+              2
+            ],
+            "generated": [
+              4,
+              4,
+              4
+            ],
+            "frames_through_transaction": 4
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 5
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 6
+          }
+        ],
+        "raw_summary": "REJECTED continuation_fault=3\nSUMMARY transactions=4 frames=6 logits=48 key_writes=48 value_writes=48 memory_requests=16080 cycles=172381\n- evidence/l1-behavior-core-case06-20261103T095715Z-33d8a9b2/speculative_tb.sv:381: Verilog $finish\n",
+        "compiled_binary": "evidence/l1-behavior-core-case06-20261103T095715Z-33d8a9b2/obj-speculative/simulate",
+        "continuation_fault": 3
+      },
+      {
+        "seed": 17,
+        "geometry": {
+          "hidden": 8,
+          "intermediate": 8,
+          "q_heads": 4,
+          "kv_heads": 1,
+          "head_dim": 8,
+          "layers": 1,
+          "vocabulary": 8,
+          "max_sequence": 16,
+          "group": 8
+        },
+        "prefix": 3,
+        "branching": false,
+        "evaluations": [
+          {
+            "token": 3,
+            "position": 0,
+            "argmax": 4,
+            "maximum_absolute_score": 1072800985
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "argmax": 4,
+            "maximum_absolute_score": 1077407916
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "argmax": 4,
+            "maximum_absolute_score": 1077407916
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "argmax": 4,
+            "maximum_absolute_score": 1077407916
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "argmax": 4,
+            "maximum_absolute_score": 1077407916
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "argmax": 4,
+            "maximum_absolute_score": 1077407916
+          }
+        ],
+        "transactions": [
+          {
+            "token": 3,
+            "position": 0,
+            "phase": 0,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 1
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "phase": 1,
+            "nodes": [
+              4,
+              4,
+              4,
+              5
+            ],
+            "parents": [
+              4,
+              0,
+              1,
+              2
+            ],
+            "generated": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "frames_through_transaction": 5
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 6
+          }
+        ],
+        "raw_summary": "REJECTED continuation_fault=1\nSUMMARY transactions=3 frames=6 logits=48 key_writes=48 value_writes=48 memory_requests=16080 cycles=172234\n- evidence/l1-behavior-core-case06-20261103T095715Z-33d8a9b2/speculative_tb.sv:381: Verilog $finish\n",
+        "compiled_binary": "evidence/l1-behavior-core-case06-20261103T095715Z-33d8a9b2/obj-speculative/simulate",
+        "continuation_fault": 1
+      },
+      {
+        "seed": 89,
+        "geometry": {
+          "hidden": 8,
+          "intermediate": 8,
+          "q_heads": 4,
+          "kv_heads": 1,
+          "head_dim": 8,
+          "layers": 1,
+          "vocabulary": 8,
+          "max_sequence": 16,
+          "group": 8
+        },
+        "prefix": 4,
+        "branching": false,
+        "evaluations": [
+          {
+            "token": 3,
+            "position": 0,
+            "argmax": 3,
+            "maximum_absolute_score": 1053488922
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "argmax": 4,
+            "maximum_absolute_score": 1069248506
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "argmax": 4,
+            "maximum_absolute_score": 1069248506
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "argmax": 4,
+            "maximum_absolute_score": 1069248506
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "argmax": 4,
+            "maximum_absolute_score": 1069248506
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "argmax": 4,
+            "maximum_absolute_score": 1072411327
+          },
+          {
+            "token": 4,
+            "position": 6,
+            "argmax": 4,
+            "maximum_absolute_score": 1072411327
+          }
+        ],
+        "transactions": [
+          {
+            "token": 3,
+            "position": 0,
+            "phase": 0,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 1
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "phase": 1,
+            "nodes": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "parents": [
+              4,
+              0,
+              1,
+              2
+            ],
+            "generated": [
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "frames_through_transaction": 6
+          },
+          {
+            "token": 4,
+            "position": 6,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 7
+          }
+        ],
+        "raw_summary": "REJECTED continuation_fault=2\nSUMMARY transactions=3 frames=7 logits=56 key_writes=56 value_writes=56 memory_requests=19096 cycles=209809\n- evidence/l1-behavior-core-case06-20261103T095715Z-33d8a9b2/speculative_tb.sv:381: Verilog $finish\n",
+        "compiled_binary": "evidence/l1-behavior-core-case06-20261103T095715Z-33d8a9b2/obj-speculative/simulate",
+        "continuation_fault": 2
+      },
+      {
+        "seed": 203,
+        "geometry": {
+          "hidden": 8,
+          "intermediate": 8,
+          "q_heads": 4,
+          "kv_heads": 1,
+          "head_dim": 8,
+          "layers": 1,
+          "vocabulary": 8,
+          "max_sequence": 16,
+          "group": 8
+        },
+        "prefix": 2,
+        "branching": true,
+        "evaluations": [
+          {
+            "token": 3,
+            "position": 0,
+            "argmax": 3,
+            "maximum_absolute_score": 1072667305
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "argmax": 4,
+            "maximum_absolute_score": 1072667305
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "argmax": 4,
+            "maximum_absolute_score": 1072667305
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "argmax": 4,
+            "maximum_absolute_score": 1072667305
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "argmax": 4,
+            "maximum_absolute_score": 1072667305
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "argmax": 4,
+            "maximum_absolute_score": 1072667305
+          }
+        ],
+        "transactions": [
+          {
+            "token": 3,
+            "position": 0,
+            "phase": 0,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 1
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "phase": 1,
+            "nodes": [
+              5,
+              4,
+              4,
+              6
+            ],
+            "parents": [
+              4,
+              4,
+              1,
+              0
+            ],
+            "generated": [
+              4,
+              4,
+              4
+            ],
+            "frames_through_transaction": 4
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 5
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "phase": 1,
+            "nodes": [
+              5
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 6
+          }
+        ],
+        "raw_summary": "REJECTED continuation_fault=1\nSUMMARY transactions=4 frames=6 logits=48 key_writes=48 value_writes=48 memory_requests=16080 cycles=172381\n- evidence/l1-behavior-core-case06-20261103T095715Z-33d8a9b2/speculative_tb.sv:381: Verilog $finish\n",
+        "compiled_binary": "evidence/l1-behavior-core-case06-20261103T095715Z-33d8a9b2/obj-speculative/simulate",
+        "continuation_fault": 1
+      },
+      {
+        "seed": 89,
+        "geometry": {
+          "hidden": 8,
+          "intermediate": 8,
+          "q_heads": 2,
+          "kv_heads": 1,
+          "head_dim": 8,
+          "layers": 1,
+          "vocabulary": 8,
+          "max_sequence": 3,
+          "group": 8
+        },
+        "prefix": 1,
+        "branching": false,
+        "evaluations": [
+          {
+            "token": 3,
+            "position": 0,
+            "argmax": 3,
+            "maximum_absolute_score": 1058263804
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "argmax": 4,
+            "maximum_absolute_score": 1058571639
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "argmax": 4,
+            "maximum_absolute_score": 1058571639
+          }
+        ],
+        "transactions": [
+          {
+            "token": 3,
+            "position": 0,
+            "phase": 0,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 1
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "phase": 1,
+            "nodes": [
+              4
+            ],
+            "parents": [
+              4
+            ],
+            "generated": [
+              4
+            ],
+            "frames_through_transaction": 2
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "phase": 1,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 3
+          }
+        ],
+        "raw_summary": "REJECTED continuation_fault=4\nSUMMARY transactions=3 frames=3 logits=24 key_writes=24 value_writes=24 memory_requests=5448 cycles=57558\n- evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/speculative_tb.sv:381: Verilog $finish\n",
+        "compiled_binary": "evidence/l1-behavior-core-case12-20261103T100538Z-5eebb290/obj-speculative/simulate",
+        "continuation_fault": 4
+      },
+      {
+        "seed": 89,
+        "geometry": {
+          "hidden": 8,
+          "intermediate": 8,
+          "q_heads": 2,
+          "kv_heads": 1,
+          "head_dim": 8,
+          "layers": 1,
+          "vocabulary": 8,
+          "max_sequence": 6,
+          "group": 8
+        },
+        "prefix": 4,
+        "branching": false,
+        "evaluations": [
+          {
+            "token": 3,
+            "position": 0,
+            "argmax": 3,
+            "maximum_absolute_score": 1058263804
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "argmax": 4,
+            "maximum_absolute_score": 1058571639
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "argmax": 4,
+            "maximum_absolute_score": 1058571639
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "argmax": 4,
+            "maximum_absolute_score": 1063797531
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "argmax": 4,
+            "maximum_absolute_score": 1068790445
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "argmax": 4,
+            "maximum_absolute_score": 1069753655
+          }
+        ],
+        "transactions": [
+          {
+            "token": 3,
+            "position": 0,
+            "phase": 0,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 1
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "phase": 1,
+            "nodes": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "parents": [
+              4,
+              0,
+              1,
+              2
+            ],
+            "generated": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "frames_through_transaction": 5
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "phase": 1,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 6
+          }
+        ],
+        "raw_summary": "REJECTED continuation_fault=4\nSUMMARY transactions=3 frames=6 logits=48 key_writes=48 value_writes=48 memory_requests=11328 cycles=126315\n- evidence/l1-behavior-core-case13-20261103T101015Z-36009dee/speculative_tb.sv:381: Verilog $finish\n",
+        "compiled_binary": "evidence/l1-behavior-core-case13-20261103T101015Z-36009dee/obj-speculative/simulate",
+        "continuation_fault": 4
+      },
+      {
+        "seed": 89,
+        "geometry": {
+          "hidden": 8,
+          "intermediate": 8,
+          "q_heads": 2,
+          "kv_heads": 1,
+          "head_dim": 8,
+          "layers": 1,
+          "vocabulary": 8,
+          "max_sequence": 7,
+          "group": 8
+        },
+        "prefix": 4,
+        "branching": false,
+        "evaluations": [
+          {
+            "token": 3,
+            "position": 0,
+            "argmax": 3,
+            "maximum_absolute_score": 1058263804
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "argmax": 4,
+            "maximum_absolute_score": 1058571639
+          },
+          {
+            "token": 4,
+            "position": 2,
+            "argmax": 4,
+            "maximum_absolute_score": 1058571639
+          },
+          {
+            "token": 4,
+            "position": 3,
+            "argmax": 4,
+            "maximum_absolute_score": 1063797531
+          },
+          {
+            "token": 4,
+            "position": 4,
+            "argmax": 4,
+            "maximum_absolute_score": 1068790445
+          },
+          {
+            "token": 4,
+            "position": 5,
+            "argmax": 4,
+            "maximum_absolute_score": 1069753655
+          },
+          {
+            "token": 4,
+            "position": 6,
+            "argmax": 4,
+            "maximum_absolute_score": 1069753655
+          }
+        ],
+        "transactions": [
+          {
+            "token": 3,
+            "position": 0,
+            "phase": 0,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 1
+          },
+          {
+            "token": 4,
+            "position": 1,
+            "phase": 1,
+            "nodes": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "parents": [
+              4,
+              0,
+              1,
+              2
+            ],
+            "generated": [
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "frames_through_transaction": 6
+          },
+          {
+            "token": 4,
+            "position": 6,
+            "phase": 1,
+            "nodes": [],
+            "parents": [],
+            "generated": [],
+            "frames_through_transaction": 7
+          }
+        ],
+        "raw_summary": "REJECTED continuation_fault=4\nSUMMARY transactions=3 frames=7 logits=56 key_writes=56 value_writes=56 memory_requests=13384 cycles=151753\n- evidence/l1-behavior-core-case14-20261103T101501Z-ac31eb13/speculative_tb.sv:381: Verilog $finish\n",
+        "compiled_binary": "evidence/l1-behavior-core-case14-20261103T101501Z-ac31eb13/obj-speculative/simulate",
+        "continuation_fault": 4
+      }
+    ],
+    "case_count": 15,
+    "compilations": 5,
+    "compared_frames": 90,
+    "compared_logit_words": 720,
+    "remaining": [
+      "direct multi-token geometry matrix and new-sequence recovery",
+      "BANKS 1/8 and QUEUE_DEPTH 1/3/16 with reordered tagged responses",
+      "memory faults and cancellation in all required pipeline phases",
+      "integrated markers and no-double-observation",
+      "production-shaped transactions and 40960-position attention leaf",
+      "measured strict per-profile fusion overhead",
+      "executed unchanged-parent generational reference"
+    ]
+  },
+  "error": null,
+  "repair_of": null,
+  "artifact_sha256": {},
+  "transient_image_sha256": {}
+}

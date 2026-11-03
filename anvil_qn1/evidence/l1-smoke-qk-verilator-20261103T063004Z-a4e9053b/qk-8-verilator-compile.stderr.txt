@@ -1,0 +1,14 @@
+%Warning-WIDTHTRUNC: evidence/l1-smoke-qk-verilator-20261103T063004Z-a4e9053b/qk_tb.sv:40:9: Logical operator LOGNOT expects 1 bit on the LHS, but LHS's VARREF 'fd' generates 32 bits.
+                                                                                           : ... note: In instance 'leaf_tb'
+   40 |     if (!fd) $fatal(1,"OPEN_VECTORS");
+      |         ^
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.020
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.
+%Warning-WIDTHTRUNC: evidence/l1-smoke-qk-verilator-20261103T063004Z-a4e9053b/qk_tb.sv:47:16: Operator ASSIGN expects 1 bits on the Assign RHS, but Assign RHS's VARREF 'key_value' generates 32 bits.
+                                                                                            : ... note: In instance 'leaf_tb'
+   47 |       in_is_key=key_value; in_head=head_value; in_layer=layer_value;
+      |                ^
+%Warning-WIDTHTRUNC: evidence/l1-smoke-qk-verilator-20261103T063004Z-a4e9053b/qk_tb.sv:47:35: Operator ASSIGN expects 6 bits on the Assign RHS, but Assign RHS's VARREF 'head_value' generates 32 bits.
+                                                                                            : ... note: In instance 'leaf_tb'
+   47 |       in_is_key=key_value; in_head=head_value; in_layer=layer_value;
+      |                                   ^

@@ -1,0 +1,2 @@
+SUMMARY edges=1325 responses=187 errors=48 modes=4 stalls=561
+- evidence/l1-smoke-csr-verilator-20261103T080448Z-4e7dacea/csr-verilator_tb.sv:77: Verilog $finish

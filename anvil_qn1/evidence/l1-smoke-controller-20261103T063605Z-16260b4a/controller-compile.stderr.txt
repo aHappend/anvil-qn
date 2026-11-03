@@ -1,0 +1,12 @@
+%Warning-WIDTHEXPAND: rtl/anvil_qn1_dual_think_ctrl.sv:104:62: Operator GTE expects 32 bits on the LHS, but LHS's SEL generates 3 bits.
+                                                             : ... note: In instance 'anvil_qn1_dual_think_ctrl'
+  104 |         if (draft_parents[i*3+:3]!=4 && draft_parents[i*3+:3]>=i)
+      |                                                              ^~
+                      ... For warning description see https://verilator.org/warn/WIDTHEXPAND?v=5.020
+                      ... Use "/* verilator lint_off WIDTHEXPAND */" and lint_on around source to disable this message.
+%Warning-UNOPTFLAT: rtl/anvil_qn1_dual_think_ctrl.sv:47:14: Signal unoptimizable: Circular combinational logic: 'anvil_qn1_dual_think_ctrl.depths'
+   47 |   wire [2:0] depths [0:3];
+      |              ^~~~~~
+                    rtl/anvil_qn1_dual_think_ctrl.sv:47:14:      Example path: anvil_qn1_dual_think_ctrl.depths
+                    rtl/anvil_qn1_dual_think_ctrl.sv:86:19:      Example path: ASSIGNW
+                    rtl/anvil_qn1_dual_think_ctrl.sv:47:14:      Example path: anvil_qn1_dual_think_ctrl.depths

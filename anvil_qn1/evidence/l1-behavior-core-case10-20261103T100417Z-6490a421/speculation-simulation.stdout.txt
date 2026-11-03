@@ -1,0 +1,3 @@
+REJECTED continuation_fault=2
+SUMMARY transactions=3 frames=7 logits=56 key_writes=56 value_writes=56 memory_requests=19096 cycles=209809
+- evidence/l1-behavior-core-case06-20261103T095715Z-33d8a9b2/speculative_tb.sv:381: Verilog $finish

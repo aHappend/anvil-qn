@@ -1,0 +1,2 @@
+SUMMARY edges=1325 responses=187 errors=48 modes=4 stalls=561
+evidence/l1-smoke-csr-icarus-20261103T062957Z-7f9ea7ad/csr-icarus_tb.sv:77: $finish called at 13256 (1s)

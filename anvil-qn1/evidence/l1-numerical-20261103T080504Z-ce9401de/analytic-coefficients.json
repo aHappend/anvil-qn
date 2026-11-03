@@ -1,0 +1,52 @@
+[
+  {
+    "dimension": 8,
+    "position": 0,
+    "coefficient_comparisons": 8
+  },
+  {
+    "dimension": 8,
+    "position": 1,
+    "coefficient_comparisons": 8
+  },
+  {
+    "dimension": 8,
+    "position": 32767,
+    "coefficient_comparisons": 8
+  },
+  {
+    "dimension": 8,
+    "position": 32768,
+    "coefficient_comparisons": 8
+  },
+  {
+    "dimension": 8,
+    "position": 40959,
+    "coefficient_comparisons": 8
+  },
+  {
+    "dimension": 128,
+    "position": 0,
+    "coefficient_comparisons": 128
+  },
+  {
+    "dimension": 128,
+    "position": 1,
+    "coefficient_comparisons": 128
+  },
+  {
+    "dimension": 128,
+    "position": 32767,
+    "coefficient_comparisons": 128
+  },
+  {
+    "dimension": 128,
+    "position": 32768,
+    "coefficient_comparisons": 128
+  },
+  {
+    "dimension": 128,
+    "position": 40959,
+    "coefficient_comparisons": 128
+  }
+]

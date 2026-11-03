@@ -1,0 +1,2 @@
+SUMMARY qk_cases=775 elements=99200 latency=133 stall_cycles=2325 reset_during_work=1 flush_during_work=1
+- evidence/l1-numerical-qk-20261103T080908Z-c36ef4fc/qk_tb.sv:105: Verilog $finish

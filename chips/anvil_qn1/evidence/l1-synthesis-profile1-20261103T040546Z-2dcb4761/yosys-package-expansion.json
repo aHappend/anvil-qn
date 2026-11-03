@@ -1,0 +1,140 @@
+[
+  {
+    "source": "rtl/anvil_qn1_attention.sv",
+    "original_sha256": "a4321bbb753d8bc47b3f70303d4fe88291aabb7fed47668e579e1ab80973bfc4",
+    "expanded_sha256": "5c3da4d780d874fbc72fee4bfb1bea27769e8a0ae628b06cba5fa655fad8d202",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_bank_scheduler.sv",
+    "original_sha256": "fa181e796e1965abb000c867e7f25e4190e8ebd5e75e903c8cf46f29fc386cf4",
+    "expanded_sha256": "e633a7d315110b1fc62d1fb019b57888caf12535d69e969c27b810cfa0aaf224",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_client_router.sv",
+    "original_sha256": "a66d254356e31cf5306a83aabf93001335802039a26f42f8c5fc2e79f48876a4",
+    "expanded_sha256": "29ed685f22c3e3093fcad1a953e01b54219814278cdeff0fd90e4d7c52dbbd08",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_csr_perf.sv",
+    "original_sha256": "12c622b105bfe8a6752790428be1830af07dd1970b5f2260360e6187fb2f3f99",
+    "expanded_sha256": "3646ec725ae84c4f254631f8673a4db1a12c79aee7ec6f1211567852ff24bb72",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_decoder.sv",
+    "original_sha256": "6f0c6cbbef30e9b25d3444ce3543b2a1c34fcf2a2951708658f92b4a173b8ba1",
+    "expanded_sha256": "527566f2267f5263a4ebdd0e1b4d896bb4650dfc2fa6f0f9455b583fca98b8ec",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_dual_think_ctrl.sv",
+    "original_sha256": "f17cdbe93024b09528b720c0ef1725b5134651f3ccd8411fe8aec4d72ccadda0",
+    "expanded_sha256": "8e9d8eaf615c590751c09479e172f455a1f742e2b48926c98866b81564d6478a",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_elementwise.sv",
+    "original_sha256": "e9291881eecb0d558a9fdb97e643558bb695a52ebec91ea01b49a87c654c5b86",
+    "expanded_sha256": "9d157613520109818728782d9cf413b56c807289529034a87fd61d15b5455ef5",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_exp.sv",
+    "original_sha256": "5111181dc03993d62c9511a5854cf78efd2258e46d1f57d8739176519276d122",
+    "expanded_sha256": "53987d886aa45c7c207271acdc78771104ae6a6e4d75081183b1b7ce0b215b9b",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_fp32_add.sv",
+    "original_sha256": "b6a6e5269f6ae181be77e1aca6e1f06981ee8049194b600a4c92231591d8b722",
+    "expanded_sha256": "5ae2497dbccc778e9d6f8b1111ef6646b5a3e8c6061756e5779f56905c8cc3ff",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_fp32_div.sv",
+    "original_sha256": "e8773598b10e4e9b3780fd64b9755c2f6acaaca9b0d19cce517909dd9c0d90d9",
+    "expanded_sha256": "382e5fe0711d493c9911d4fcbe760f11d7d8373f98ff8429152588b0cb70dc0f",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_fp32_mul.sv",
+    "original_sha256": "cb8694dc1b1458ea96966f31ee6f9c739bad058bae3cb2a41bf5e4759f7f1491",
+    "expanded_sha256": "444cd358aed3a87692e63d10d02fc333f304184ff0b47c1289ad6bc6d5f2fd72",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_fp32_sqrt.sv",
+    "original_sha256": "7aa5faacd7aa2dadd017b7000b7b73cdeeec7e355fef124e6d2f4575c175648e",
+    "expanded_sha256": "d4e5fc6c58b9ffe01b367f95fbfb3e906222c580fc730c2c5ad207f5014b1ed9",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_gemv.sv",
+    "original_sha256": "515153c305ca08ec0db2d9a5726b96bd191814cad07106d86dada3b3c1612331",
+    "expanded_sha256": "98085f35717f6390f19376b945e6af6870b50aa451d214fcbb3c7e9e69eb23ff",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_head_buffer.sv",
+    "original_sha256": "a7721c33fa71d22b7a3948b7afa12285aa4e497fd96b7fe4c5cb308ab8e3751a",
+    "expanded_sha256": "fa3a092540a08fe0af9f33a0906ec7d7a961fa8236dec259512cb64dda7c1b92",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_mlp.sv",
+    "original_sha256": "0ef2daf33db3951d8e829a5bce9a314a6cb88d831c49a7afb8f3221f188b3349",
+    "expanded_sha256": "0b3d2e250a3c73d0599a99c74d276b5f796f8043efd5a63f9e40b63845707df7",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_norm_memory.sv",
+    "original_sha256": "a521d9c81ced3dee2f71ab4d32e6c6a10c678e35827b23a3c03b014f7ef25555",
+    "expanded_sha256": "9cf087ebecb21502ad7c119127ee44dda5d768fda5f46c96600c4ad447f4e1a8",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_parameters.sv",
+    "original_sha256": "aef4414dc1714ab1f43ad537a3a55db444d48b82b38e8593df33f9bf457a35e3",
+    "expanded_sha256": "56c12db7aaf7dd82d717e0e44566b8270ea72de0fa7c3be26502fc33bdb503a5",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_qknorm_rope.sv",
+    "original_sha256": "b98dc78b32ffd61c453ed5010dd4cd0cb61685da98d80e9d381711203bd06430",
+    "expanded_sha256": "1dfc19a0820a6a0628362b151a5f3e931e5f4e71a6cd9adfa2fc87f510557b27",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_rmsnorm.sv",
+    "original_sha256": "def94137e03e585456660ddb8a407bb49fd37b9fa4c8935f260a5c1c6db8212d",
+    "expanded_sha256": "b671da9896360759af919cb8273fbdc950871dc426bfb6af59ee31e6b1822d81",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_scalar.sv",
+    "original_sha256": "83adaade3a2204f0499d249527a4386ddf9b09e2d99b155611f9ca799f5df2f1",
+    "expanded_sha256": "6167645c600dfa12c86d75d7f644f9edad95e89e1ab3213e25eb7cfab6cc2a89",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_silu.sv",
+    "original_sha256": "bb87d62d1d08ef6fb37a73678c48c2b6201160506d18fc50bda9ebcc4f7e2a4f",
+    "expanded_sha256": "e19dc2c90f0e13efd2a0d1ed2fef2b36d49e51794f52cabaabcc3699990f99a0",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_tensor_array.sv",
+    "original_sha256": "884fc412fefac2676092af367b202bf678be2c87eecbcf9caa498b75fd2b021a",
+    "expanded_sha256": "7e2c53b29042a3114a1a2dcaae3b9e35918a73ba307976aaa2d2500bcd041c3f",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  },
+  {
+    "source": "rtl/anvil_qn1_top.sv",
+    "original_sha256": "ea147b32108fa51c9fb635d2814ae1319e14e5d7c1a0c62874371e5d5db7ab40",
+    "expanded_sha256": "cba176bfff3419bdffee16f88d4300ac2cf20bdccf3fb9e26d88772c69476714",
+    "operation": "inline unchanged package declarations; resolve package scope"
+  }
+]

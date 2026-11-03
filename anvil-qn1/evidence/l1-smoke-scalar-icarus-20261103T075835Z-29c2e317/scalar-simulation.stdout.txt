@@ -1,0 +1,2 @@
+SUMMARY scalar_cases=4973 stalled_outputs=4973
+evidence/l1-smoke-scalar-icarus-20261103T075835Z-29c2e317/scalar_tb.sv:59: $finish called at 1113500 (1s)

@@ -1,0 +1,2 @@
+SUMMARY scalar_cases=4973 stalled_outputs=4973
+- evidence/l1-smoke-scalar-verilator-20261103T062958Z-7c1b8784/scalar_tb.sv:59: Verilog $finish

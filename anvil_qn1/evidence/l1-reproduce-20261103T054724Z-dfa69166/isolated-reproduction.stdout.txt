@@ -1,0 +1,27 @@
+RECEIPT evidence/preparation/reproduce-startup-icarus-20261103T054725Z-5c0f5c98/receipt.json
+RECEIPT evidence/preparation/reproduce-scalar-icarus-20261103T054734Z-25997a1f/receipt.json
+RECEIPT evidence/preparation/reproduce-qk-icarus-20261103T054738Z-40cbc503/receipt.json
+RECEIPT evidence/preparation/reproduce-tensor-icarus-20261103T054742Z-6d3e9bd9/receipt.json
+PROGRESS startup-verilator-b1-q3-d8-g2-v8-m16-compile: tool execution active
+PROGRESS startup-verilator-b1-q3-d8-g2-v8-m16-compile: tool execution active
+PROGRESS startup-verilator-b1-q3-d8-g2-v8-m16-compile: tool execution active
+PROGRESS startup-verilator-b1-q3-d8-g2-v8-m16-compile: tool execution active
+PROGRESS startup-verilator-b1-q3-d8-g2-v8-m16-compile: tool execution active
+PROGRESS startup-verilator-b1-q3-d8-g2-v8-m16-compile: tool execution active
+PROGRESS startup-verilator-b1-q3-d8-g2-v8-m16-compile: tool execution active
+PROGRESS startup-verilator-b1-q3-d8-g2-v8-m16-compile: tool execution active
+RECEIPT evidence/preparation/reproduce-startup-verilator-20261103T054749Z-95bef1a5/receipt.json
+RECEIPT evidence/preparation/reproduce-scalar-verilator-20261103T055218Z-c96c192e/receipt.json
+PROGRESS qk-8-verilator-compile: tool execution active
+PROGRESS qk-8-verilator-compile: tool execution active
+PROGRESS qk-8-verilator-compile: tool execution active
+RECEIPT evidence/preparation/reproduce-qk-verilator-20261103T055224Z-551a601f/receipt.json
+PROGRESS tensor-cpp-compile: tool execution active
+PROGRESS tensor-cpp-compile: tool execution active
+PROGRESS tensor-cpp-compile: tool execution active
+PROGRESS tensor-cpp-compile: tool execution active
+PROGRESS tensor-cpp-compile: tool execution active
+PROGRESS tensor-cpp-compile: tool execution active
+PROGRESS tensor-cpp-compile: tool execution active
+RECEIPT evidence/preparation/reproduce-tensor-verilator-20261103T055422Z-53f81ecb/receipt.json
+RECEIPT evidence/preparation/reproduce-child-20261103T054725Z-2fe93429/receipt.json

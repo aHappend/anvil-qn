@@ -1,0 +1,14 @@
+%Warning-WIDTHTRUNC: evidence/l1-smoke-scalar-verilator-20261103T075852Z-aaa0ad4b/scalar_tb.sv:27:34: Logical operator LOGNOT expects 1 bit on the LHS, but LHS's VARREF 'fd' generates 32 bits.
+                                                                                                    : ... note: In instance 'scalar_tb'
+   27 |     fd=$fopen(filename,"r"); if (!fd) $fatal(1,"OPEN_VECTORS");
+      |                                  ^
+                     ... For warning description see https://verilator.org/warn/WIDTHTRUNC?v=5.020
+                     ... Use "/* verilator lint_off WIDTHTRUNC */" and lint_on around source to disable this message.
+%Warning-WIDTHTRUNC: evidence/l1-smoke-scalar-verilator-20261103T075852Z-aaa0ad4b/scalar_tb.sv:33:12: Operator ASSIGN expects 3 bits on the Assign RHS, but Assign RHS's VARREF 'operation' generates 32 bits.
+                                                                                                    : ... note: In instance 'scalar_tb'
+   33 |       in_op=operation; in_error=error_value; in_valid=1; out_ready=0;
+      |            ^
+%Warning-WIDTHTRUNC: evidence/l1-smoke-scalar-verilator-20261103T075852Z-aaa0ad4b/scalar_tb.sv:33:32: Operator ASSIGN expects 1 bits on the Assign RHS, but Assign RHS's VARREF 'error_value' generates 32 bits.
+                                                                                                    : ... note: In instance 'scalar_tb'
+   33 |       in_op=operation; in_error=error_value; in_valid=1; out_ready=0;
+      |                                ^

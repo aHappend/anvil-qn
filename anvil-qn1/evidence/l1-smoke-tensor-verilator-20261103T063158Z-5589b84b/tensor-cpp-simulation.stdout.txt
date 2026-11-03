@@ -1,0 +1,1 @@
+SUMMARY tensor_cases=12 latency=48 blocked_cycles=18 cycles=79

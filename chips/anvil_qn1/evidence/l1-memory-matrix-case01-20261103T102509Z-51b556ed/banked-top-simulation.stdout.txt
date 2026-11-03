@@ -1,0 +1,11 @@
+BANK bank=0 requests=2268
+BANK bank=1 requests=2025
+BANK bank=2 requests=1969
+BANK bank=3 requests=1980
+BANK bank=4 requests=1952
+BANK bank=5 requests=1973
+BANK bank=6 requests=1966
+BANK bank=7 requests=1947
+REORDER responses=9765
+SUMMARY transactions=6 logits=48 key_writes=48 value_writes=48 memory_requests=16080 cycles=184275
+- evidence/l1-memory-matrix-case01-20261103T102509Z-51b556ed/banked_top_tb.sv:357: Verilog $finish

@@ -1,0 +1,2 @@
+SUMMARY tensor_cases=12 latency=48 blocked_cycles=18 reset_during_work=1 flush_during_work=1
+evidence/l1-smoke-tensor-icarus-20261103T075844Z-783c37e3/tensor_tb.sv:96: $finish called at 1626 (1s)

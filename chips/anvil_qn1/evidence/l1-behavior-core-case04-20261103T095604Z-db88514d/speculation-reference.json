@@ -1,0 +1,114 @@
+{
+  "seed": 89,
+  "geometry": {
+    "hidden": 8,
+    "intermediate": 8,
+    "q_heads": 2,
+    "kv_heads": 1,
+    "head_dim": 8,
+    "layers": 1,
+    "vocabulary": 8,
+    "max_sequence": 16,
+    "group": 8
+  },
+  "prefix": 4,
+  "branching": false,
+  "evaluations": [
+    {
+      "token": 3,
+      "position": 0,
+      "argmax": 3,
+      "maximum_absolute_score": 1058263804
+    },
+    {
+      "token": 4,
+      "position": 1,
+      "argmax": 4,
+      "maximum_absolute_score": 1058571639
+    },
+    {
+      "token": 4,
+      "position": 2,
+      "argmax": 4,
+      "maximum_absolute_score": 1058571639
+    },
+    {
+      "token": 4,
+      "position": 3,
+      "argmax": 4,
+      "maximum_absolute_score": 1063797531
+    },
+    {
+      "token": 4,
+      "position": 4,
+      "argmax": 4,
+      "maximum_absolute_score": 1068790445
+    },
+    {
+      "token": 4,
+      "position": 5,
+      "argmax": 4,
+      "maximum_absolute_score": 1069753655
+    },
+    {
+      "token": 4,
+      "position": 6,
+      "argmax": 4,
+      "maximum_absolute_score": 1069753655
+    }
+  ],
+  "transactions": [
+    {
+      "token": 3,
+      "position": 0,
+      "phase": 0,
+      "nodes": [],
+      "parents": [],
+      "generated": [],
+      "frames_through_transaction": 1
+    },
+    {
+      "token": 4,
+      "position": 1,
+      "phase": 1,
+      "nodes": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "parents": [
+        4,
+        0,
+        1,
+        2
+      ],
+      "generated": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "frames_through_transaction": 6
+    },
+    {
+      "token": 4,
+      "position": 6,
+      "phase": 1,
+      "nodes": [
+        5
+      ],
+      "parents": [
+        4
+      ],
+      "generated": [
+        4
+      ],
+      "frames_through_transaction": 7
+    }
+  ],
+  "raw_summary": "REJECTED continuation_fault=2\nSUMMARY transactions=3 frames=7 logits=56 key_writes=56 value_writes=56 memory_requests=13384 cycles=151762\n- evidence/l1-behavior-core-case00-20261103T094917Z-daf33fc5/speculative_tb.sv:381: Verilog $finish\n",
+  "compiled_binary": "evidence/l1-behavior-core-case00-20261103T094917Z-daf33fc5/obj-speculative/simulate",
+  "continuation_fault": 2
+}

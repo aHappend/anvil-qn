@@ -1,0 +1,2 @@
+SUMMARY startup_tests=4 request_stalls=20 cancel_drains=2 read_errors=1 reset_owned=1
+evidence/l1-smoke-20261103T075218Z-e20a230a/startup-icarus-b1-q1-d8-g4-v1-m1.sv:158: $finish called at 572 (1s)

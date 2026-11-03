@@ -1,0 +1,2 @@
+SUMMARY qk_cases=17 elements=136 latency=133 stall_cycles=51 reset_during_work=1 flush_during_work=1
+evidence/l1-smoke-qk-icarus-20261103T062946Z-2fe5a986/qk_tb.sv:105: $finish called at 25496 (1s)
